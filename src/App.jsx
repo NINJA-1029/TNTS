@@ -5,9 +5,11 @@ import { TravelArcPlanner } from "./components/TravelArcPlanner";
 import { ExploreCategories } from "./components/ExploreCategories";
 import { ARExplorerCard, ARExplorerModal } from "./components/ARExplorerModal";
 import { OfflineMapView } from "./components/OfflineMapView";
+import { CrowdAnalyzer } from "./components/CrowdAnalyzer";
 import { SOSModal } from "./components/SOSModal";
-import { AlertTriangle, ShieldCheck, Cpu, HeartHandshake, Compass } from "lucide-react";
+import { AlertTriangle, ShieldCheck, Cpu, HeartHandshake, Compass, Sparkles, MapPin, Camera, Users } from "lucide-react";
 import { getSavedItinerary } from "./services/offlineStorage";
+import { t } from "./data/i18n";
 import "./App.css";
 
 export default function App() {
@@ -30,9 +32,13 @@ export default function App() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+  const handleApplyCrowdToPlanner = (placeId) => {
+    setActiveTab("planner");
+  };
+
   return (
     <div className="app-root-container">
-      {/* Traditional Side & Corner Kolam SVG Borders */}
+      {/* Traditional Side & Corner Kolam Image Borders */}
       <KolamBorders />
 
       {/* Top Header Navigation */}
@@ -74,6 +80,13 @@ export default function App() {
             <OfflineMapView language={language} itinerary={generatedItinerary} />
           </div>
         )}
+
+        {/* Tab 4: Crowd Analyzer */}
+        {activeTab === "crowd" && (
+          <div className="view-pane fade-in">
+            <CrowdAnalyzer language={language} onApplyToPlanner={handleApplyCrowdToPlanner} />
+          </div>
+        )}
       </main>
 
       {/* Sandal & Maroon Glassmorphic Site Footer */}
@@ -83,49 +96,46 @@ export default function App() {
           <div className="footer-col brand-col">
             <div className="footer-logo font-serif">
               <Compass size={20} className="logo-compass" />
-              <span>Heritage Farm • Travel Arc</span>
+              <span>{t("footer.brand", language)}</span>
             </div>
-            <p className="footer-tagline">Crafting Tamil Nadu's Heritage Stories</p>
+            <p className="footer-tagline">{t("footer.tagline", language)}</p>
             <p className="footer-desc">
-              100% Offline Edge AI tourist guide for exploring ancient UNESCO Chola & Pallava temples, organic farmstays, local food spots, and Western Ghats eco trails.
+              {t("footer.desc", language)}
             </p>
           </div>
 
           {/* Quick Nav */}
           <div className="footer-col nav-col">
-            <h4 className="footer-heading font-serif">Quick Navigation</h4>
+            <h4 className="footer-heading font-serif">{t("footer.quickNav", language)}</h4>
             <ul className="footer-links">
-              <li><button onClick={() => setActiveTab("planner")}>✨ AI Itinerary Planner</button></li>
-              <li><button onClick={() => setActiveTab("explore")}>🧭 Heritage Explorer</button></li>
-              <li><button onClick={() => setActiveTab("map")}>📍 Offline Vector Map</button></li>
-              <li><button onClick={() => setIsArOpen(true)}>🕶️ AR Camera Guide</button></li>
+              <li><button onClick={() => setActiveTab("planner")}><Sparkles size={14} className="footer-link-icon" /> {t("footer.aiPlanner", language)}</button></li>
+              <li><button onClick={() => setActiveTab("explore")}><Compass size={14} className="footer-link-icon" /> {t("footer.heritageExplorer", language)}</button></li>
+              <li><button onClick={() => setActiveTab("map")}><MapPin size={14} className="footer-link-icon" /> {t("footer.offlineMap", language)}</button></li>
+              <li><button onClick={() => setActiveTab("crowd")}><Users size={14} className="footer-link-icon" /> {t("nav.crowdAnalyzer", language)}</button></li>
+              <li><button onClick={() => setIsArOpen(true)}><Camera size={14} className="footer-link-icon" /> {t("footer.arCamera", language)}</button></li>
             </ul>
           </div>
 
           {/* Safety & Certification */}
           <div className="footer-col cert-col">
-            <h4 className="footer-heading font-serif">Safety & Certification</h4>
+            <h4 className="footer-heading font-serif">{t("footer.safetyCert", language)}</h4>
             <div className="cert-badge-box">
               <ShieldCheck size={16} color="#81C784" />
-              <span>Certified Safe for Women & Solo Travelers</span>
+              <span>{t("footer.certifiedSafe", language)}</span>
             </div>
             <div className="cert-badge-box">
               <Cpu size={16} color="#F8C868" />
-              <span>Powered by Google Gemma 2B Edge AI</span>
+              <span>{t("footer.poweredBy", language)}</span>
             </div>
             <div className="cert-badge-box">
               <HeartHandshake size={16} color="#FF7A00" />
-              <span>Zero-Carbon Sustainable Rural Tourism</span>
+              <span>{t("footer.zeroCarbonTourism", language)}</span>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom-bar">
-          <p>© 2026 Heritage Farm • Tamil Nadu Offline Edge AI Guide</p>
-          <div className="footer-status-pill">
-            <span className="live-dot"></span>
-            <span>Gemma 2B Engine Active (100% Offline)</span>
-          </div>
+          <p>&copy; {t("footer.copyright", language)}</p>
         </div>
       </footer>
 

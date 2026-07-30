@@ -133,7 +133,7 @@ export function SOSModal({ isOpen, onClose }) {
 
   const sendSmsDispatch = () => {
     const message = encodeURIComponent(
-      `🚨 EMERGENCY SOS ALERT! I need urgent help. My GPS Location: Lat ${gpsLocation.lat}, Lng ${gpsLocation.lng}. Landmark: ${gpsLocation.landmark}. Open Google Maps: https://maps.google.com/?q=${gpsLocation.lat},${gpsLocation.lng}`
+      `EMERGENCY SOS ALERT! I need urgent help. My GPS Location: Lat ${gpsLocation.lat}, Lng ${gpsLocation.lng}. Landmark: ${gpsLocation.landmark}. Open Google Maps: https://maps.google.com/?q=${gpsLocation.lat},${gpsLocation.lng}`
     );
     const primaryPhone = contacts[0]?.phone || "100";
     window.open(`sms:${primaryPhone}?body=${message}`, "_blank");

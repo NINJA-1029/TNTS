@@ -1,5 +1,6 @@
 import React from "react";
-import { Sparkles, Compass, Map, Globe, Wifi, WifiOff } from "lucide-react";
+import { Sparkles, Compass, Map, Globe, Wifi, WifiOff, Users } from "lucide-react";
+import { t } from "../data/i18n";
 
 export function HeaderNav({
   activeTab,
@@ -15,47 +16,9 @@ export function HeaderNav({
     { code: "ta", label: "தமிழ் (TA)" },
     { code: "te", label: "తెలుగు (TE)" },
     { code: "hi", label: "हिंदी (HI)" },
-    { code: "ml", label: "മലയാളം (ML)" },
+    { code: "ml", label: "மலയാളம் (ML)" },
     { code: "kn", label: "ಕನ್ನಡ (KN)" }
   ];
-
-  const getNavLabel = (tabKey) => {
-    const labels = {
-      planner: {
-        en: "AI Planner",
-        ta: "AI திட்டமிடுதல்",
-        te: "AI ప్లానర్",
-        hi: "AI योजना",
-        ml: "AI പ്ലാനർ",
-        kn: "AI ಯೋಜಕ"
-      },
-      explore: {
-        en: "Explore",
-        ta: "ஆராய்க",
-        te: "అన్వేషించండి",
-        hi: "खोजें",
-        ml: "പര്യവേക്ഷണം",
-        kn: "ಅನ್ವೇಷಿಸಿ"
-      },
-      map: {
-        en: "Map View",
-        ta: "வரைபடம்",
-        te: "మ్యాప్ వీక్షణ",
-        hi: "मानचित्र",
-        ml: "മാപ്പ് കാഴ്ച",
-        kn: "ನಕ್ಷೆ ನೋಟ"
-      },
-      getStarted: {
-        en: "Get Started",
-        ta: "தொடங்குக",
-        te: "ప్రారంభించండి",
-        hi: "शुरू करें",
-        ml: "ആരംഭിക്കുക",
-        kn: "ಪ್ರಾರಂಭಿಸಿ"
-      }
-    };
-    return labels[tabKey][language] || labels[tabKey]["en"];
-  };
 
   return (
     <header className="site-header">
@@ -76,7 +39,7 @@ export function HeaderNav({
           </div>
           <div className="brand-text font-serif">
             <h1 className="brand-title">Heritage Farm</h1>
-            <span className="brand-tagline">Crafting Tamil Nadu's Heritage Stories</span>
+            <span className="brand-tagline">{t("footer.tagline", language)}</span>
           </div>
         </div>
 
@@ -87,7 +50,7 @@ export function HeaderNav({
             onClick={() => setActiveTab("planner")}
           >
             <Sparkles size={16} className="nav-icon" />
-            <span>{getNavLabel("planner")}</span>
+            <span>{t("nav.planner", language)}</span>
           </button>
 
           <button
@@ -95,7 +58,7 @@ export function HeaderNav({
             onClick={() => setActiveTab("explore")}
           >
             <Compass size={16} className="nav-icon" />
-            <span>{getNavLabel("explore")}</span>
+            <span>{t("nav.explore", language)}</span>
           </button>
 
           <button
@@ -103,7 +66,15 @@ export function HeaderNav({
             onClick={() => setActiveTab("map")}
           >
             <Map size={16} className="nav-icon" />
-            <span>{getNavLabel("map")}</span>
+            <span>{t("nav.map", language)}</span>
+          </button>
+
+          <button
+            className={`nav-link ${activeTab === "crowd" ? "active" : ""}`}
+            onClick={() => setActiveTab("crowd")}
+          >
+            <Users size={16} className="nav-icon" />
+            <span>{t("nav.crowdAnalyzer", language)}</span>
           </button>
 
           {/* 6-Language Switcher Dropdown */}
@@ -129,12 +100,7 @@ export function HeaderNav({
             title="Click to toggle offline airplane test mode"
           >
             {isOffline ? <WifiOff size={14} /> : <Wifi size={14} />}
-            <span className="hide-mobile">{isOffline ? "Gemma: Offline" : "Gemma: Sync"}</span>
-          </button>
-
-          {/* Get Started CTA Button */}
-          <button className="get-started-btn" onClick={() => setActiveTab("planner")}>
-            {getNavLabel("getStarted")}
+            <span className="hide-mobile">{isOffline ? t("nav.gemmaOffline", language) : t("nav.gemmaSync", language)}</span>
           </button>
         </nav>
       </div>

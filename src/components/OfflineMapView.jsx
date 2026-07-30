@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MapPin, Volume2, ShieldCheck, Navigation, Info, Compass } from "lucide-react";
 import { DISTRICTS, EXPERIENCES } from "../data/heritageData";
+import { t } from "../data/i18n";
 import { speakAudioGuide, stopAudioGuide } from "../services/gemmaEdgeEngine";
 
 export function OfflineMapView({ language, itinerary }) {
@@ -160,7 +161,7 @@ export function OfflineMapView({ language, itinerary }) {
             <div style="color: #3D081B; font-family: 'Outfit', sans-serif; padding: 4px; max-width: 220px;">
               <h4 style="margin: 0 0 4px 0; font-family: 'Cinzel', serif; color: #FF7A00; font-weight: 700;">Day ${dayItem.day}</h4>
               <p style="margin: 0 0 6px 0; font-weight: 600; font-size: 13px; line-height: 1.2;">${dayItem.title}</p>
-              <p style="margin: 0; font-size: 11px; opacity: 0.9; border-top: 1px solid #DDD; padding-top: 4px;">📍 ${dayItem.location}</p>
+              <p style="margin: 0; font-size: 11px; opacity: 0.9; border-top: 1px solid #DDD; padding-top: 4px;">${dayItem.location}</p>
             </div>
           `;
 
@@ -178,7 +179,7 @@ export function OfflineMapView({ language, itinerary }) {
               const expMarker = L.marker([matchedExp.offlineMapData.lat, matchedExp.offlineMapData.lng], {
                 icon: L.divIcon({
                   className: "exp-leaflet-marker",
-                  html: `<div style="font-size:18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); cursor: pointer;">📍</div>`,
+                  html: `<div style="font-size:18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); cursor: pointer; color: #FF7A00;">&#9679;</div>`,
                   iconSize: [20, 20],
                   iconAnchor: [10, 20]
                 }),
@@ -231,12 +232,12 @@ export function OfflineMapView({ language, itinerary }) {
     <div className="offline-map-view-container">
       <div className="map-view-header">
         <div>
-          <h2 className="map-title font-serif">Tamil Nadu Heritage Map</h2>
-          <span className="map-subtitle">100% Cached Vector Coordinates • Offline Route Guidance</span>
+          <h2 className="map-title font-serif">{t("map.title", language)}</h2>
+          <span className="map-subtitle">{t("map.subtitle", language)}</span>
         </div>
         <div className="offline-cache-badge">
           <Compass size={14} />
-          <span>6 Districts Cached • GPS Active</span>
+          <span>{t("map.districtsCached", language)}</span>
         </div>
       </div>
 
@@ -258,22 +259,16 @@ export function OfflineMapView({ language, itinerary }) {
             {!leafletLoaded && (
               <div className="map-loading-state">
                 <Compass size={32} className="gemma-icon-spin" />
-                <p>Loading Interactive Heritage Map...</p>
+                <p>{t("map.loading", language)}</p>
               </div>
             )}
           </div>
         </div>
 
-        {/* Selected District Information Panel */}
+        {/* Selected District Information Panel - NO hero image */}
         <div className="map-district-panel">
           {selectedMapDistrict && (
             <div className="district-detail-card fade-in">
-              <img 
-                src={selectedMapDistrict.image} 
-                alt={selectedMapDistrict.name} 
-                className="district-hero-img"
-              />
-
               <div className="district-card-header">
                 <div>
                   <h3 className="font-serif">{selectedMapDistrict.name}</h3>
@@ -290,8 +285,8 @@ export function OfflineMapView({ language, itinerary }) {
               </p>
 
               <div className="tags-row">
-                {selectedMapDistrict.tags.map((t, idx) => (
-                  <span key={idx} className="tag-chip">#{t}</span>
+                {selectedMapDistrict.tags.map((tg, idx) => (
+                  <span key={idx} className="tag-chip">#{tg}</span>
                 ))}
               </div>
 
@@ -301,12 +296,12 @@ export function OfflineMapView({ language, itinerary }) {
                   onClick={() => handlePlayDistrictAudio(selectedMapDistrict)}
                 >
                   <Volume2 size={16} />
-                  <span>{isPlayingMapAudio ? "Stop Audio" : "Listen Audio Guide"}</span>
+                  <span>{isPlayingMapAudio ? t("map.stopAudio", language) : t("map.listenAudio", language)}</span>
                 </button>
               </div>
 
               <div className="district-exps-preview">
-                <h4>Nearby Experiences:</h4>
+                <h4>{t("map.nearbyExperiences", language)}</h4>
                 {EXPERIENCES.filter((e) => e.districtId === selectedMapDistrict.id).map((e) => (
                   <div key={e.id} className="mini-exp-item">
                     <MapPin size={13} color="#FF7A00" />
