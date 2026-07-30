@@ -124,13 +124,13 @@ export function getCrowdAnalysisForPlace(placeId, language = "en") {
   let currentLevel = isHeritage ? "Moderate" : isFood ? "Heavy" : "Low";
   let crowdPct = isHeritage ? 48 : isFood ? 72 : 28;
 
-  let bestTime = isHeritage 
+  let bestTime = isHeritage
     ? "07:00 AM - 09:00 AM (Cool Morning)"
-    : isFood 
+    : isFood
       ? "12:00 PM (Early Lunch) or 07:00 PM (Early Dinner)"
       : "08:00 AM - 11:00 AM (Morning Farm Walk)";
 
-  let avoidHrs = isHeritage 
+  let avoidHrs = isHeritage
     ? "11:30 AM - 02:30 PM & 06:00 PM - 07:30 PM"
     : isFood
       ? "01:30 PM - 03:00 PM & 08:30 PM - 10:00 PM"

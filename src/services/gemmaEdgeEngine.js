@@ -222,7 +222,7 @@ Ensure you output EXACTLY ${daysCount} days. Ensure the JSON is valid.`;
     `Filtering strict district nodes ONLY for: [${selectedDistrict.name}]...`,
     safeForWomen ? "Applying Women Safety Index filter (Score > 9.5)..." : "Checking route safety...",
     sustainableFirst ? "Prioritizing Organic Farmstays & Local Food Spots..." : "Optimizing transit distance...",
-    `Synthesizing ${daysCount}-day Travel Arc strictly inside ${selectedDistrict.name}...`,
+    `Synthesizing ${daysCount}-day Itinerary strictly inside ${selectedDistrict.name}...`,
     "Finalizing Gemma Edge itinerary manifest..."
   ];
 

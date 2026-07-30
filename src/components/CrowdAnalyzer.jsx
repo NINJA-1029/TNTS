@@ -29,8 +29,8 @@ export function CrowdAnalyzer({ language, onApplyToPlanner }) {
               {language === "ta" ? "தமிழ்நாடு சுற்றுலா கூட்ட நெரிசல் பகுப்பாய்வு" : "Tamil Nadu Tourism Crowd Analyzer"}
             </h2>
             <p className="crowd-sub-title">
-              {language === "ta" 
-                ? "வரலாற்று சுற்றுலா தரவு & வானிலை அடிப்படையில் ஜெம்மா AI கணிப்பு" 
+              {language === "ta"
+                ? "வரலாற்று சுற்றுலா தரவு & வானிலை அடிப்படையில் ஜெம்மா AI கணிப்பு"
                 : "Gemma AI Predictive Engine based on TN Tourism statistics, weather, and festival calendars"}
             </p>
           </div>
@@ -42,8 +42,8 @@ export function CrowdAnalyzer({ language, onApplyToPlanner }) {
             <Compass size={15} />
             <span>{language === "ta" ? "இடத்தைத் தேர்ந்தெடுக்கவும்:" : "SELECT HERITAGE SITE:"}</span>
           </label>
-          <select 
-            value={selectedPlaceId} 
+          <select
+            value={selectedPlaceId}
             onChange={(e) => setSelectedPlaceId(e.target.value)}
             className="place-picker-select font-serif"
           >
@@ -75,8 +75,8 @@ export function CrowdAnalyzer({ language, onApplyToPlanner }) {
           </div>
 
           <div className="density-progress-track">
-            <div 
-              className="density-progress-fill" 
+            <div
+              className="density-progress-fill"
               style={{ width: `${analysis.crowdIndexPercent}%`, backgroundColor: levelColor }}
             ></div>
           </div>
@@ -110,7 +110,7 @@ export function CrowdAnalyzer({ language, onApplyToPlanner }) {
         {/* Weather & Season Factor */}
         <div className="crowd-card weather-card">
           <h3 className="card-heading font-serif">{language === "ta" ? "வானிலை & திருவிழா தாக்கம்" : "Weather & Season Factors"}</h3>
-          
+
           <div className="factor-item">
             <Sun size={18} className="factor-icon" />
             <div>
@@ -156,11 +156,11 @@ export function CrowdAnalyzer({ language, onApplyToPlanner }) {
                     <span className="bar-status">({item.label})</span>
                   </div>
                   <div className="bar-fill-track">
-                    <div 
-                      className="bar-fill" 
-                      style={{ 
-                        height: `${item.density}%`, 
-                        backgroundColor: barColor 
+                    <div
+                      className="bar-fill"
+                      style={{
+                        height: `${item.density}%`,
+                        backgroundColor: barColor
                       }}
                     ></div>
                   </div>
