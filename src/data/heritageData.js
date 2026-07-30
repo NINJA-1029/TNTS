@@ -52,7 +52,7 @@ export const DISTRICTS = [
       ml: "മധ്യ മേഖല",
       kn: "ಮಧ್ಯ ವಲಯ"
     },
-    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.08 PM.jpeg",
     description: "The Rice Bowl of Tamil Nadu, cradle of Chola Temples (UNESCO), Tanjore Art Plates, and Degree Filter Coffee.",
     tamilDescription: "தமிழ்நாட்டின் நெற்களஞ்சியம், பெருவுடையார் கோயில் மற்றும் தஞ்சாவூர் பில்டர் காபி மையம்.",
     safetyRating: "9.9 / 10 (High Community Safety)",
@@ -108,7 +108,7 @@ export const DISTRICTS = [
       te: "పశ్చిమ కనుమల మండలం",
       hi: "पश्चिमी घाट क्षेत्र",
       ml: "പശ്ചിമഘട്ട മേഖല",
-      kn: "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ವಲಯ"
+      kn: "പശ്ചിമ ಘಟ್ಟಗಳ ವಲಯ"
     },
     image: "/pics/16.jpeg",
     description: "Queen of Hill Stations, organic tea gardens, Toda tribal settlements, mountain steam train, and homemade chocolates.",
@@ -137,7 +137,7 @@ export const DISTRICTS = [
       te: "దక్షిణ కొస మండలం",
       hi: "दक्षिणी छोर क्षेत्र",
       ml: "തെക്കൻ അഗ്രം മേഖല",
-      kn: "ದಕ್ಷಿಣ ತುದಿಯ ವಲಯ"
+      kn: "ದಕ್ಷಿಣ தುದಿಯ ವಲಯ"
     },
     image: "/pics/31.jpeg",
     description: "Confluence of three oceans, Thiruvalluvar Statue, Padmanabhapuram Wooden Palace, and coastal Nanjil cuisine.",
@@ -238,38 +238,10 @@ export const EMERGENCY_NUMBERS = [
   { service: "Fire & Rescue Service", number: "101", desc: "Fire Emergency" }
 ];
 
-// Curated verified authentic stock photo URLs for South Indian Heritage & Culture
-const IMGS = {
-  meenakshi: "/photos/meenakshi amman temple.jpeg",
-  bigTemple: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
-  shoreTemple: "/pics/46.jpeg",
-  stoneTemple: "/pics/47.jpeg",
-  statue: "/pics/31.jpeg",
-  mansion: "/pics/1.jpeg",
-  gopuramCarvings: "/photos/meenakshi amman temple.jpeg",
-  pillarHall: "/pics/5.jpeg",
-  palaceStucco: "/photos/nayakar mahal.jpeg",
-  sacredTank: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
-  caveTemple: "/pics/3.jpeg",
-  foodDosa: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
-  foodCoffee: "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=800&q=80",
-  foodBiryani: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
-  foodCurry: "/pics/13.jpeg",
-  foodDrink: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
-  farmPaddy: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
-  farmCoconut: "https://images.unsplash.com/photo-1592417817098-8f3d6eb231fc?auto=format&fit=crop&w=800&q=80",
-  farmHarvest: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80",
-  farmPottery: "/pics/7.jpeg",
-  ecoTea: "/pics/24.jpeg",
-  ecoWaterfall: "/pics/21.jpeg",
-  ecoCoast: "/pics/40.jpeg",
-  ecoForest: "/pics/23.jpeg"
-};
-
 // EXACT 15 SIGNATURE EXPERIENCES PER DISTRICT (90 ITEMS TOTAL ACROSS 6 DISTRICTS)
 export const EXPERIENCES = [
   // ==========================================
-  // MADURAI DISTRICT (15 PLACES)
+  // MADURAI DISTRICT (15 PLACES -> /photos/)
   // ==========================================
   { 
     id: "mad-1", 
@@ -352,7 +324,7 @@ export const EXPERIENCES = [
     rating: 4.92, 
     description: "Sixth abode of Lord Murugan surrounded by dense mountain forest canopy and natural springs.", 
     tamilDescription: "இயற்கைச் சோலைகள் மற்றும் அருவிகள் சூழ அமைந்துள்ள முருகனின் ஆறாவது படைவீடு.",
-    image: IMGS.stoneTemple, 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.40 PM.jpeg", 
     safeForWomen: true, 
     offlineMapData: { lat: 10.0820, lng: 78.2190 } 
   },
@@ -369,7 +341,7 @@ export const EXPERIENCES = [
     rating: 4.91, 
     description: "Massive 17th-century temple tank featuring a central island pavilion for annual float festivals.", 
     tamilDescription: "மையத்தில் அழகான மண்டபத்துடன் 17 ஆம் நூற்றாண்டில் அமைக்கப்பட்ட பிரமாண்ட தெப்பக்குளம்.",
-    image: IMGS.sacredTank, 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.40 PM (1).jpeg", 
     safeForWomen: true, 
     offlineMapData: { lat: 9.9100, lng: 78.1480 } 
   },
@@ -386,7 +358,7 @@ export const EXPERIENCES = [
     rating: 4.88, 
     description: "Ancient Divya Desam temple depicting Lord Vishnu in sitting, standing, and reclining postures.", 
     tamilDescription: "நின்ற, இருந்த, கிடந்த மூன்று நிலைகளில் பெருமாள் அருள் பாலிக்கும் திவ்யதேசம்.",
-    image: IMGS.gopuramCarvings, 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.40 PM (2).jpeg", 
     safeForWomen: true, 
     offlineMapData: { lat: 9.9148, lng: 78.1147 } 
   },
@@ -403,7 +375,7 @@ export const EXPERIENCES = [
     rating: 4.96, 
     description: "First Arupadaiveedu of Lord Murugan, carved directly into the rock face in the 6th century.", 
     tamilDescription: "6 ஆம் நூற்றாண்டில் மலையைக் குடைந்து அமைக்கப்பட்ட முருகனின் முதல் படைவீடு.",
-    image: IMGS.caveTemple, 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.41 PM.jpeg", 
     safeForWomen: true, 
     offlineMapData: { lat: 9.8800, lng: 78.0700 } 
   },
@@ -418,158 +390,158 @@ export const EXPERIENCES = [
     duration: "3 Hours", price: "Free Entry", rating: 4.87, 
     description: "Ancient rock hill containing 2,000-year-old Jain beds, carved Tirthankara reliefs, and Tamil-Brahmi script.", 
     tamilDescription: "2,000 ஆண்டுகள் பழமையான சமணர் படுக்கைகள் மற்றும் தமிழ் பிராமி கல்வெட்டுகள் உள்ள மலை.",
-    image: IMGS.caveTemple, safeForWomen: true, offlineMapData: { lat: 9.9320, lng: 78.0480 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.41 PM (1).jpeg", safeForWomen: true, offlineMapData: { lat: 9.9320, lng: 78.0480 } 
   },
   { 
     id: "mad-10", title: "Jigarthanda (Famous Shops)", tamilTitle: "மதுரை ஜிகர்தண்டா",
     category: "food", districtId: "madurai", districtName: "Madurai District", location: "East Marret Street, Madurai", duration: "45 Mins", price: "₹80", rating: 4.97, 
     description: "Madurai's iconic cooling dessert made with badam pisin, condensed milk, nannari, and ice cream.", 
     tamilDescription: "பாதாம் பிசின், பாலாடை மற்றும் நன்னாரியால் செய்யப்படும் மதுரையின் பாரம்பரிய குளிர்பானம்.",
-    image: IMGS.foodDrink, safeForWomen: true, offlineMapData: { lat: 9.9170, lng: 78.1210 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.41 PM (2).jpeg", safeForWomen: true, offlineMapData: { lat: 9.9170, lng: 78.1210 } 
   },
   { 
     id: "mad-11", title: "Murugan Idli Shop", tamilTitle: "முருகன் இட்லி கடை",
     category: "food", districtId: "madurai", districtName: "Madurai District", location: "West Masi Street, Madurai", duration: "1 Hour", price: "₹150", rating: 4.95, 
     description: "World-famous South Indian breakfast spot renowned for soft steaming idlis and 4 chutney spreads.", 
     tamilDescription: "மென்மையான மல்லிகைப் பூ இட்லி மற்றும் 4 வகை சட்னிகளுக்குப் புகழ்பெற்ற உணவகம்.",
-    image: IMGS.foodDosa, safeForWomen: true, offlineMapData: { lat: 9.9185, lng: 78.1150 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.41 PM (3).jpeg", safeForWomen: true, offlineMapData: { lat: 9.9185, lng: 78.1150 } 
   },
   { 
     id: "mad-12", title: "Amma Mess", tamilTitle: "அம்மா மெஸ்",
     category: "food", districtId: "madurai", districtName: "Madurai District", location: "KK Nagar, Madurai", duration: "1 Hour", price: "₹300", rating: 4.93, 
     description: "Legendary non-veg culinary institute serving bone marrow omelette and authentic spicy gravies.", 
     tamilDescription: "அசத்தான சுவையில் அசைவ உணவுகள் மற்றும் அயிரை மீன் குழம்பு வழங்கும் பாரம்பரிய மெஸ்.",
-    image: IMGS.foodCurry, safeForWomen: true, offlineMapData: { lat: 9.9280, lng: 78.1400 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.42 PM.jpeg", safeForWomen: true, offlineMapData: { lat: 9.9280, lng: 78.1400 } 
   },
   { 
     id: "mad-13", title: "Konar Kadai", tamilTitle: "கோனார் கடை",
     category: "food", districtId: "madurai", districtName: "Madurai District", location: "Simmakkal, Madurai", duration: "1 Hour", price: "₹250", rating: 4.92, 
     description: "Originator of Madurai Kari Dosa (layered mutton omelette dosa) and fluffy Bun Parottas.", 
     tamilDescription: "மதுரை கரி தோசை மற்றும் பன் பரோட்டாவின் தாயகமான பாரம்பரிய உணவகம்.",
-    image: IMGS.foodDosa, safeForWomen: true, offlineMapData: { lat: 9.9240, lng: 78.1190 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.11.42 PM (1).jpeg", safeForWomen: true, offlineMapData: { lat: 9.9240, lng: 78.1190 } 
   },
   { 
     id: "mad-14", title: "Vilachery Pottery Village", tamilTitle: "விளச்சேரி மண்பாண்டக் கிராமம்",
     category: "agri", districtId: "madurai", districtName: "Madurai District", location: "Vilachery, Madurai", duration: "3 Hours", price: "Free Entry", rating: 4.94, 
     description: "Artisan village crafting terracotta clay Ayyanar horses and traditional painted clay idols.", 
     tamilDescription: "களிமண் அய்யனார் குதிரைகள் மற்றும் கொலு பொம்மைகள் செய்யும் கைவினைஞர்களின் கிராமம்.",
-    image: IMGS.farmPottery, safeForWomen: true, offlineMapData: { lat: 9.8900, lng: 78.0600 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.07 PM.jpeg", safeForWomen: true, offlineMapData: { lat: 9.8900, lng: 78.0600 } 
   },
   { 
     id: "mad-15", title: "Madurai Flower Market", tamilTitle: "மதுரை பூச்சந்தை",
     category: "agri", districtId: "madurai", districtName: "Madurai District", location: "Mattuthavani, Madurai", duration: "1.5 Hours", price: "Free Entry", rating: 4.93, 
     description: "Bustling wholesale flower market famous for Madurai Malli (GI Tagged Jasmine) exported worldwide.", 
     tamilDescription: "உலகப் புகழ்பெற்ற மதுரை மல்லிகை பூக்கள் விற்பனை செய்யப்படும் பிரமாண்ட சந்தை.",
-    image: IMGS.farmHarvest, safeForWomen: true, offlineMapData: { lat: 9.9450, lng: 78.1550 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.07 PM (1).jpeg", safeForWomen: true, offlineMapData: { lat: 9.9450, lng: 78.1550 } 
   },
 
   // ==========================================
-  // THANJAVUR DISTRICT (15 PLACES)
+  // THANJAVUR DISTRICT (15 PLACES -> /photos/)
   // ==========================================
   { 
     id: "thj-1", title: "Brihadeeswarar Temple", tamilTitle: "தஞ்சைப் பெருவுடையார் கோயில்",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Thanjavur Fort, Thanjavur", duration: "3 Hours", price: "₹150", rating: 4.98, 
     description: "Grand Chola UNESCO temple featuring a 216-foot granite Vimanam and an 80-ton monolith capstone.", 
     tamilDescription: "216 அடி உயர விமானத்துடன் சோழர் காலத்தில் கட்டப்பட்ட யுனெஸ்கோ உலகப் பாரம்பரிய கோயில்.",
-    image: IMGS.bigTemple, safeForWomen: true, offlineMapData: { lat: 10.7867, lng: 79.1378 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.08 PM.jpeg", safeForWomen: true, offlineMapData: { lat: 10.7867, lng: 79.1378 } 
   },
   { 
     id: "thj-2", title: "Thanjavur Palace", tamilTitle: "தஞ்சாவூர் அரண்மனை",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "East Main Street, Thanjavur", duration: "2.5 Hours", price: "₹100", rating: 4.90, 
     description: "16th-century Nayak and Maratha royal palace complex with intricate courtrooms and towers.", 
     tamilDescription: "நாயக்கர் மற்றும் மராட்டிய மன்னர்களால் கட்டப்பட்ட பிரமாண்ட ராயல் அரண்மனை.",
-    image: IMGS.palaceStucco, safeForWomen: true, offlineMapData: { lat: 10.7915, lng: 79.1380 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.08 PM (1).jpeg", safeForWomen: true, offlineMapData: { lat: 10.7915, lng: 79.1380 } 
   },
   { 
     id: "thj-3", title: "Saraswathi Mahal Library", tamilTitle: "சரஸ்வதி மஹால் நூலகம்",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Palace Campus, Thanjavur", duration: "2 Hours", price: "₹50", rating: 4.92, 
     description: "One of the oldest libraries in Asia housing over 60,000 rare palm-leaf manuscripts and maps.", 
     tamilDescription: "60,000 க்கும் மேற்பட்ட ஓலைச்சுவடிகள் கொண்ட ஆசியாவின் மிகப்பழமையான நூலகம்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 10.7918, lng: 79.1382 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.08 PM (2).jpeg", safeForWomen: true, offlineMapData: { lat: 10.7918, lng: 79.1382 } 
   },
   { 
     id: "thj-4", title: "Art Gallery", tamilTitle: "தஞ்சை கலைக்கூடம்",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Palace Campus, Thanjavur", duration: "2 Hours", price: "₹50", rating: 4.91, 
     description: "World-renowned repository of 9th to 12th century Chola bronze sculptures and stone statues.", 
     tamilDescription: "சோழர் காலத்துப் புகழ்பெற்ற வெண்கல மற்றும் கல் சிலைகளின் உலகத் தரமான காட்சியகம்.",
-    image: IMGS.gopuramCarvings, safeForWomen: true, offlineMapData: { lat: 10.7920, lng: 79.1385 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.08 PM (3).jpeg", safeForWomen: true, offlineMapData: { lat: 10.7920, lng: 79.1385 } 
   },
   { 
     id: "thj-5", title: "Punnainallur Mariamman Temple", tamilTitle: "புன்னநல்லூர் மாரியம்மன் கோயில்",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Punnainallur, Thanjavur", duration: "2 Hours", price: "Free Entry", rating: 4.93, 
     description: "Famous 17th-century shrine constructed by Maratha King Venkoji featuring a self-manifested mud idol.", 
     tamilDescription: "மராட்டிய மன்னர்களால் நிர்மாணிக்கப்பட்ட புகழ்பெற்ற சுயம்பு மாரியம்மன் ஆலயம்.",
-    image: IMGS.gopuramCarvings, safeForWomen: true, offlineMapData: { lat: 10.7780, lng: 79.1850 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.09 PM.jpeg", safeForWomen: true, offlineMapData: { lat: 10.7780, lng: 79.1850 } 
   },
   { 
     id: "thj-6", title: "Thiruvaiyaru & Thyagaraja Samadhi", tamilTitle: "திருவையாறு தியாகராஜர் சமாதி",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Thiruvaiyaru, Thanjavur", duration: "2 Hours", price: "Free Entry", rating: 4.94, 
     description: "Sacred town on Cauvery banks, seat of Saint Thyagaraja and Carnatic classical music aradhana.", 
     tamilDescription: "காவிரி கரையில் அமைந்துள்ள கர்நாடக சங்கீத மும்மூர்த்திகளில் ஒருவரான தியாகராஜர் சமாதி.",
-    image: IMGS.sacredTank, safeForWomen: true, offlineMapData: { lat: 10.8800, lng: 79.1000 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.09 PM (1).jpeg", safeForWomen: true, offlineMapData: { lat: 10.8800, lng: 79.1000 } 
   },
   { 
     id: "thj-7", title: "Kallanai (Grand Anicut)", tamilTitle: "கல்லணை",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Kallanai, Thanjavur", duration: "2.5 Hours", price: "Free Entry", rating: 4.95, 
     description: "2nd-century CE stone dam built across Cauvery by Chola King Karikala, one of the oldest in the world.", 
     tamilDescription: "கரிகால சோழனால் காவிரி ஆற்றின் குறுக்கே கட்டப்பட்ட பழமையான கல்லணை.",
-    image: IMGS.ecoCoast, safeForWomen: true, offlineMapData: { lat: 10.8340, lng: 78.8190 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.09 PM (2).jpeg", safeForWomen: true, offlineMapData: { lat: 10.8340, lng: 78.8190 } 
   },
   { 
     id: "thj-8", title: "Swamimalai", tamilTitle: "சுவாமிமலை",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Kumbakonam, Thanjavur", duration: "2.5 Hours", price: "Free Entry", rating: 4.94, 
     description: "Fourth Arupadaiveedu of Lord Murugan, built on an artificial hillock with 60 steps.", 
     tamilDescription: "தந்தைக்கு உபதேசம் செய்த முருகனின் நான்காவது படைவீடு ஆலயம்.",
-    image: IMGS.gopuramCarvings, safeForWomen: true, offlineMapData: { lat: 10.9500, lng: 79.3300 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.09 PM (3).jpeg", safeForWomen: true, offlineMapData: { lat: 10.9500, lng: 79.3300 } 
   },
   { 
     id: "thj-9", title: "Darasuram Airavatesvara Temple", tamilTitle: "தாராசுரம் ஐராவதேஸ்வரர் கோயில்",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Kumbakonam, Thanjavur", duration: "2.5 Hours", price: "Free Entry", rating: 4.96, 
     description: "12th-century Chola UNESCO temple shaped like a stone chariot pulled by horses.", 
     tamilDescription: "கல் தேர் வடிவில் குதிரைகளால் இழுக்கப்படுவது போல் சோழரால் கட்டப்பட்ட சிற்பக் கோயில்.",
-    image: IMGS.stoneTemple, safeForWomen: true, offlineMapData: { lat: 10.9480, lng: 79.3560 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.10 PM.jpeg", safeForWomen: true, offlineMapData: { lat: 10.9480, lng: 79.3560 } 
   },
   { 
     id: "thj-10", title: "Gangaikonda Cholapuram Temple", tamilTitle: "கங்கைகொண்ட சோழபுரம்",
     category: "heritage", districtId: "thanjavur", districtName: "Thanjavur District", location: "Gangaikonda Cholapuram", duration: "2.5 Hours", price: "Free Entry", rating: 4.96, 
     description: "UNESCO Great Living Chola Temple built by Emperor Rajendra Chola I to celebrate Ganges victory.", 
-    tamilDescription: "முதலாம் ராஜேந்திர சோழனால் கங்கை வெற்றிச் சின்னமாக உயர்த்தப்பட்ட யுனெஸ்கோ கோயில்.",
-    image: IMGS.bigTemple, safeForWomen: true, offlineMapData: { lat: 11.2060, lng: 79.4480 } 
+    tamilDescription: "முதலாம் ராஜேந்திர சோழனால் கங்கை வெற்றிச் இருப்பதாக உயர்த்தப்பட்ட யுனெஸ்கோ கோயில்.",
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.10 PM (1).jpeg", safeForWomen: true, offlineMapData: { lat: 11.2060, lng: 79.4480 } 
   },
   { 
     id: "thj-11", title: "Traditional Thanjavur Meals & Degree Coffee", tamilTitle: "தஞ்சாவூர் சாப்பாடு & டிகிரி காபி",
     category: "food", districtId: "thanjavur", districtName: "Thanjavur District", location: "Big Temple Street, Thanjavur", duration: "1.5 Hours", price: "₹200", rating: 4.94, 
     description: "Banana leaf thali serving traditional Rice Bowl sambar and unadulterated brass filter degree coffee.", 
     tamilDescription: "பாரம்பரிய வாழை இலை சோழமண்டல சாப்பாடு மற்றும் பித்தளை டம்ளர் டிகிரி காபி.",
-    image: IMGS.foodCoffee, safeForWomen: true, offlineMapData: { lat: 10.7865, lng: 79.1375 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.10 PM (2).jpeg", safeForWomen: true, offlineMapData: { lat: 10.7865, lng: 79.1375 } 
   },
   { 
     id: "thj-12", title: "Sathars Restaurant", tamilTitle: "சத்தார்ஸ் உணவகம்",
     category: "food", districtId: "thanjavur", districtName: "Thanjavur District", location: "Gandhiji Road, Thanjavur", duration: "1 Hour", price: "₹250", rating: 4.86, 
     description: "Popular heritage diner serving authentic Thanjavur biryani and traditional tiffin items.", 
     tamilDescription: "தஞ்சாவூர் பாரம்பரிய பிரியாணி மற்றும் சிற்றுண்டிகளுக்குப் புகழ்பெற்ற உணவகம்.",
-    image: IMGS.foodBiryani, safeForWomen: true, offlineMapData: { lat: 10.7860, lng: 79.1370 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.10 PM (3).jpeg", safeForWomen: true, offlineMapData: { lat: 10.7860, lng: 79.1370 } 
   },
   { 
     id: "thj-13", title: "Thanjavur Painting Centre", tamilTitle: "தஞ்சாவூர் ஓவியக் கூடம்",
     category: "agri", districtId: "thanjavur", districtName: "Thanjavur District", location: "South Main Street, Thanjavur", duration: "2 Hours", price: "Free Entry", rating: 4.93, 
     description: "Handicraft studios crafting traditional gold foil Tanjore glass paintings and sacred icons.", 
     tamilDescription: "தங்க இழை மற்றும் ரத்தினக் கற்கள் பதித்த பாரம்பரிய தஞ்சாவூர் ஓவியப் பட்டறைகள்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 10.7830, lng: 79.1380 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.11 PM.jpeg", safeForWomen: true, offlineMapData: { lat: 10.7830, lng: 79.1380 } 
   },
   { 
     id: "thj-14", title: "Thanjavur Handicrafts Market", tamilTitle: "தஞ்சாவூர் தலையாட்டி பொம்மை சந்தை",
     category: "agri", districtId: "thanjavur", districtName: "Thanjavur District", location: "Palace Bazaar, Thanjavur", duration: "2 Hours", price: "Free Entry", rating: 4.89, 
     description: "Artisan market selling bobblehead Thanjavur Thalaiyatti Bommai dolls, brass art plates, and veenas.", 
     tamilDescription: "தஞ்சாவூர் தலையாட்டி பொம்மைகள் மற்றும் கலைத்தட்டுகள் விற்கப்படும் கைவினை சந்தை.",
-    image: IMGS.farmPottery, safeForWomen: true, offlineMapData: { lat: 10.7910, lng: 79.1390 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.11 PM (1).jpeg", safeForWomen: true, offlineMapData: { lat: 10.7910, lng: 79.1390 } 
   },
   { 
     id: "thj-15", title: "Sivaganga Park & Cauvery River Bank", tamilTitle: "சிவகங்கை பூங்கா & காவிரி கரை",
     category: "eco", districtId: "thanjavur", districtName: "Thanjavur District", location: "Thanjavur Town", duration: "1.5 Hours", price: "Free Entry", rating: 4.88, 
     description: "Lush botanical garden surrounds and scenic Cauvery river bathing ghats.", 
     tamilDescription: "பசுமையான தாவரவியல் பூங்கா மற்றும் காவிரி நதிக்கரையின் இயற்கை காட்சிகள்.",
-    image: IMGS.ecoForest, safeForWomen: true, offlineMapData: { lat: 10.7875, lng: 79.1365 } 
+    image: "/photos/WhatsApp Image 2026-07-30 at 10.12.07 PM.jpeg", safeForWomen: true, offlineMapData: { lat: 10.7875, lng: 79.1365 } 
   },
 
   // ==========================================
@@ -1034,9 +1006,9 @@ export function getLocalizedExperience(exp, language = "en") {
 
   const categoryLabels = {
     heritage: { en: "HERITAGE & CULTURE", ta: "பாரம்பரியம் & கலாச்சாரம்", te: "వారసత్వం & సంస్కృతి", hi: "विरासत और संस्कृति", ml: "പൈതൃകം & സംസ്കാരം", kn: "ಪರಂಪರೆ & ಸಂಸ್ಕೃತಿ" },
-    food: { en: "REGIONAL CUISINE", ta: "பாரம்பரிய உணவு", te: "ప్రాంతీయ వంటకాలు", hi: "क्षेत्रीय व्यंजन", ml: "പ്രാദേശിക ഭക്ഷണം", kn: "പ്രાદೇಶಿಕ ಅಡುಗೆ" },
-    agri: { en: "AGRI & FARMSTAY", ta: "விவசாயம் & பண்ணை", te: "వ్యవసాయం & ఫార్మ్‌స్టే", hi: "कृषि और फ़ार्मस्टे", ml: "കൃഷി & ഫാംസ്റ്റേ", kn: "ಕೃಷಿ & ಫಾರ್ಮ್‌ಸ್ಟೇ" },
-    eco: { en: "ECO BIOSPHERE", ta: "சுற்றுச்சூழல் & இயற்கை", te: "ఎకో బయోస్పియర్", hi: "இகோ பயோஸ்ஃபியர்", ml: "ഇക്കോ ബയോസ്ഫിയർ", kn: "ಇಕೋ ಬಯೋಸ್ಫಿಯರ್" }
+    food: { en: "REGIONAL CUISINE", ta: "பாரம்பரிய உணவு", te: "ప్రాంతీయ వంటకాలు", hi: "क्षेत्रीय व्यंजन", ml: "പ്രാദേശിക ഭക്ഷണം", kn: "ಪ್ರಾದೇಶಿಕ ಅಡುಗೆ" },
+    agri: { en: "AGRI & FARMSTAY", ta: "விவசாயம் & பண்ணை", te: "వ్యவసాయம் & ஃபார்మ్‌స్టే", hi: "कृषि और फ़ार्मस्टे", ml: "കൃഷി & ഫാംസ്റ്റേ", kn: "ಕೃಷಿ & ಫಾರ್ಮ್‌ಸ್ಟೇ" },
+    eco: { en: "ECO BIOSPHERE", ta: "சுற்றுச்சூழல் & இயற்கை", te: "ఎకో బயோஸ்పియర్", hi: "इको बायोस्फीयर", ml: "ഇക്കോ ബയോസ്ഫിയർ", kn: "ಇಕೋ ಬಯೋಸ್ಫಿಯರ್" }
   };
 
   const categoryLabel = (categoryLabels[exp.category] && categoryLabels[exp.category][language])
