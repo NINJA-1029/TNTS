@@ -273,7 +273,7 @@ export function TravelArcPlanner({ language, generatedItinerary, setGeneratedIti
                     checked={avoidCrowds} 
                     onChange={(e) => setAvoidCrowds(e.target.checked)} 
                   />
-                  <span><Users size={16} className="inline-icon" /> {language === "ta" ? "உச்ச நெரிசலைத் தவிர்க்கவும் (ஜெம்மா AI பகுப்பாய்வு)" : "Avoid Peak Crowds (Gemma AI Analytics)"}</span>
+                  <span><Users size={16} className="inline-icon" /> {t("planner.avoidCrowds", language)}</span>
                 </label>
               </div>
 

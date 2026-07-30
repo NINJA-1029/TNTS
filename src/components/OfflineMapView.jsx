@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MapPin, Volume2, ShieldCheck, Navigation, Info, Compass } from "lucide-react";
-import { DISTRICTS, EXPERIENCES } from "../data/heritageData";
+import { DISTRICTS, EXPERIENCES, getDistrictLabel } from "../data/heritageData";
 import { t } from "../data/i18n";
 import { speakAudioGuide, stopAudioGuide } from "../services/gemmaEdgeEngine";
 
@@ -271,8 +271,8 @@ export function OfflineMapView({ language, itinerary }) {
             <div className="district-detail-card fade-in">
               <div className="district-card-header">
                 <div>
-                  <h3 className="font-serif">{selectedMapDistrict.name}</h3>
-                  <span className="tamil-sub font-serif">{selectedMapDistrict.tamilName}</span>
+                  <h3 className="font-serif">{getDistrictLabel(selectedMapDistrict, language)}</h3>
+                  {language !== "en" && <span className="tamil-sub font-serif">{selectedMapDistrict.name}</span>}
                 </div>
                 <div className="safety-badge font-serif">
                   <ShieldCheck size={14} />

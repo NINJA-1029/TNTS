@@ -15,7 +15,7 @@ import {
   Search,
   Compass
 } from "lucide-react";
-import { HERITAGE_CATEGORIES, EXPERIENCES, DISTRICTS } from "../data/heritageData";
+import { HERITAGE_CATEGORIES, EXPERIENCES, DISTRICTS, getLocalizedExperience } from "../data/heritageData";
 import { t } from "../data/i18n";
 import { speakAudioGuide, stopAudioGuide } from "../services/gemmaEdgeEngine";
 
@@ -28,21 +28,23 @@ export function ExploreCategories({ language }) {
 
   // Strict District & Category & Search Filter logic
   const filteredExperiences = EXPERIENCES.filter((exp) => {
+    const loc = getLocalizedExperience(exp, language);
     const matchesCategory = activeCategoryFilter === "all" || exp.category === activeCategoryFilter;
     const matchesDistrict = selectedDistrictFilter === "all" || exp.districtId === selectedDistrictFilter;
     const matchesSearch = searchQuery === "" || 
-      exp.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-      exp.districtName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      exp.description.toLowerCase().includes(searchQuery.toLowerCase());
+      loc.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+      loc.districtName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      loc.description.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesDistrict && matchesSearch;
   });
 
   const handleToggleAudio = (exp) => {
+    const loc = getLocalizedExperience(exp, language);
     if (playingExpAudioId === exp.id) {
       stopAudioGuide();
       setPlayingExpAudioId(null);
     } else {
-      const text = `${exp.title}. District: ${exp.districtName}. ${exp.description}`;
+      const text = `${loc.title}. ${loc.districtName}. ${loc.description}`;
       speakAudioGuide(text, language === "ta" ? "ta-IN" : "en-IN");
       setPlayingExpAudioId(exp.id);
     }
@@ -57,7 +59,6 @@ export function ExploreCategories({ language }) {
           <span>{t("explore.discoveryHub", language)}</span>
         </div>
         <h2 className="main-heading font-serif">{t("explore.title", language)}</h2>
-        <h3 className="tamil-main-heading font-serif">{language === "ta" ? "" : "தமிழ்நாட்டை ஆராயுங்கள்"}</h3>
         <p className="section-subtext">
           {t("explore.subtitle", language)}
         </p>
@@ -90,7 +91,6 @@ export function ExploreCategories({ language }) {
             <Sprout size={30} />
           </div>
           <h3 className="cat-title font-serif">{t("explore.agriRural", language)}</h3>
-          <span className="cat-tamil-title font-serif">{language !== "ta" ? "விவசாயம் & கிராமப்புறம்" : ""}</span>
           <p className="cat-desc">{t("explore.engageFarming", language)}</p>
           <button className="explore-cat-link font-serif">
             <span>{t("explore.exploreAgri", language)}</span>
@@ -106,7 +106,6 @@ export function ExploreCategories({ language }) {
             <Landmark size={30} />
           </div>
           <h3 className="cat-title font-serif">{t("explore.heritageCulture", language)}</h3>
-          <span className="cat-tamil-title font-serif">{language !== "ta" ? "பாரம்பரியம் & கலாச்சாரம்" : ""}</span>
           <p className="cat-desc">{t("explore.journeyHeritage", language)}</p>
           <button className="explore-cat-link font-serif">
             <span>{t("explore.exploreHeritage", language)}</span>
@@ -122,7 +121,6 @@ export function ExploreCategories({ language }) {
             <Mountain size={30} />
           </div>
           <h3 className="cat-title font-serif">{t("explore.ecoAdventure", language)}</h3>
-          <span className="cat-tamil-title font-serif">{language !== "ta" ? "சுற்றுச்சூழல் & சாகசம்" : ""}</span>
           <p className="cat-desc">{t("explore.scenicTrails", language)}</p>
           <button className="explore-cat-link font-serif">
             <span>{t("explore.exploreEco", language)}</span>
@@ -148,9 +146,10 @@ export function ExploreCategories({ language }) {
             <option value="all">{t("explore.allDistricts", language)} ({EXPERIENCES.length} {t("explore.placesMapped", language)})</option>
             {DISTRICTS.map((dist) => {
               const countInDist = EXPERIENCES.filter((e) => e.districtId === dist.id).length;
+              const distLocalizedName = dist.names && dist.names[language] ? dist.names[language] : (language === "ta" ? dist.tamilName : dist.name);
               return (
                 <option key={dist.id} value={dist.id}>
-                  {dist.name} ({dist.tamilName}) — {countInDist} {t("explore.heritagePlaces", language)}
+                  📍 {distLocalizedName} — {countInDist} {t("explore.heritagePlaces", language)}
                 </option>
               );
             })}
@@ -199,58 +198,61 @@ export function ExploreCategories({ language }) {
       {/* Experience Cards Grid */}
       {filteredExperiences.length > 0 ? (
         <div className="experiences-grid">
-          {filteredExperiences.map((exp) => (
-            <div key={exp.id} className="exp-card fade-in">
-              <div className="exp-image-box">
-                <img src={exp.image} alt={exp.title} loading="lazy" />
-                <div className="exp-category-badge">{exp.category.toUpperCase()}</div>
-              </div>
-
-              <div className="exp-content">
-                <div className="exp-district">
-                  <MapPin size={13} />
-                  <span>{exp.districtName}</span>
+          {filteredExperiences.map((exp) => {
+            const locExp = getLocalizedExperience(exp, language);
+            return (
+              <div key={exp.id} className="exp-card fade-in">
+                <div className="exp-image-box">
+                  <img src={exp.image} alt={locExp.title} loading="lazy" />
+                  <div className="exp-category-badge">{locExp.categoryLabel}</div>
                 </div>
 
-                <h4 className="exp-title font-serif">{exp.title}</h4>
-                <p className="exp-desc">{exp.description}</p>
-
-                {/* Prominent Safe for Women tag in content area */}
-                {exp.safeForWomen && (
-                  <div className="exp-safety-content-tag">
-                    <ShieldCheck size={14} />
-                    <span>{t("explore.safeForWomen", language)}</span>
+                <div className="exp-content">
+                  <div className="exp-district">
+                    <MapPin size={13} />
+                    <span>{locExp.districtName}</span>
                   </div>
-                )}
 
-                <div className="exp-meta-row">
-                  <div className="meta-price">{exp.price}</div>
-                  <div className="meta-rating">
-                    <Star size={14} fill="#F8C868" stroke="none" />
-                    <span>{exp.rating}</span>
+                  <h4 className="exp-title font-serif">{locExp.title}</h4>
+                  <p className="exp-desc">{locExp.description}</p>
+
+                  {/* Prominent Safe for Women tag in content area */}
+                  {exp.safeForWomen && (
+                    <div className="exp-safety-content-tag">
+                      <ShieldCheck size={14} />
+                      <span>{t("explore.safeForWomen", language)}</span>
+                    </div>
+                  )}
+
+                  <div className="exp-meta-row">
+                    <div className="meta-price">{exp.price}</div>
+                    <div className="meta-rating">
+                      <Star size={14} fill="#F8C868" stroke="none" />
+                      <span>{exp.rating}</span>
+                    </div>
+                  </div>
+
+                  <div className="exp-card-actions">
+                    <button 
+                      className="exp-details-btn"
+                      onClick={() => setSelectedExpModal(exp)}
+                    >
+                      <Info size={14} />
+                      <span>{t("explore.details", language)}</span>
+                    </button>
+
+                    <button 
+                      className={`exp-audio-btn ${playingExpAudioId === exp.id ? "playing" : ""}`}
+                      onClick={() => handleToggleAudio(exp)}
+                    >
+                      {playingExpAudioId === exp.id ? <VolumeX size={14} /> : <Volume2 size={14} />}
+                      <span>{playingExpAudioId === exp.id ? t("explore.stopVoice", language) : t("planner.voiceGuide", language)}</span>
+                    </button>
                   </div>
                 </div>
-
-                <div className="exp-card-actions">
-                  <button 
-                    className="exp-details-btn"
-                    onClick={() => setSelectedExpModal(exp)}
-                  >
-                    <Info size={14} />
-                    <span>{t("explore.details", language)}</span>
-                  </button>
-
-                  <button 
-                    className={`exp-audio-btn ${playingExpAudioId === exp.id ? "playing" : ""}`}
-                    onClick={() => handleToggleAudio(exp)}
-                  >
-                    {playingExpAudioId === exp.id ? <VolumeX size={14} /> : <Volume2 size={14} />}
-                    <span>{playingExpAudioId === exp.id ? t("explore.stopVoice", language) : t("planner.voiceGuide", language)}</span>
-                  </button>
-                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       ) : (
         <div className="no-experiences-box">
@@ -271,59 +273,62 @@ export function ExploreCategories({ language }) {
       )}
 
       {/* Experience Details Modal */}
-      {selectedExpModal && (
-        <div className="modal-backdrop fade-in" onClick={() => setSelectedExpModal(null)}>
-          <div className="exp-modal-content slide-up" onClick={(e) => e.stopPropagation()}>
-            <div className="exp-modal-header">
-              <div className="exp-modal-badge">{selectedExpModal.category.toUpperCase()}</div>
-              <button className="close-btn" onClick={() => setSelectedExpModal(null)}>
-                <X size={20} />
-              </button>
-            </div>
-
-            <div className="exp-modal-body">
-              <div className="modal-img-wrapper">
-                <img src={selectedExpModal.image} alt={selectedExpModal.title} />
+      {selectedExpModal && (() => {
+        const locModal = getLocalizedExperience(selectedExpModal, language);
+        return (
+          <div className="modal-backdrop fade-in" onClick={() => setSelectedExpModal(null)}>
+            <div className="exp-modal-content slide-up" onClick={(e) => e.stopPropagation()}>
+              <div className="exp-modal-header">
+                <div className="exp-modal-badge">{locModal.categoryLabel}</div>
+                <button className="close-btn" onClick={() => setSelectedExpModal(null)}>
+                  <X size={20} />
+                </button>
               </div>
 
-              <div className="modal-text-content">
-                <div className="exp-district">
-                  <MapPin size={14} />
-                  <span>{selectedExpModal.districtName}</span>
+              <div className="exp-modal-body">
+                <div className="modal-img-wrapper">
+                  <img src={selectedExpModal.image} alt={locModal.title} />
                 </div>
-                <h3 className="modal-title font-serif">{selectedExpModal.title}</h3>
-                <p className="modal-desc">{selectedExpModal.description}</p>
 
-                <div className="modal-tags-row">
-                  {selectedExpModal.safeForWomen && (
-                    <span className="tag-pill safe">
-                      <ShieldCheck size={12} /> {t("explore.safeForWomenCertified", language)}
+                <div className="modal-text-content">
+                  <div className="exp-district">
+                    <MapPin size={14} />
+                    <span>{locModal.districtName}</span>
+                  </div>
+                  <h3 className="modal-title font-serif">{locModal.title}</h3>
+                  <p className="modal-desc">{locModal.description}</p>
+
+                  <div className="modal-tags-row">
+                    {selectedExpModal.safeForWomen && (
+                      <span className="tag-pill safe">
+                        <ShieldCheck size={12} /> {t("explore.safeForWomenCertified", language)}
+                      </span>
+                    )}
+                    <span className="tag-pill price">{selectedExpModal.price}</span>
+                    <span className="tag-pill rating">
+                      <Star size={12} fill="#F8C868" stroke="none" /> {selectedExpModal.rating} {t("explore.rating", language)}
                     </span>
-                  )}
-                  <span className="tag-pill price">{selectedExpModal.price}</span>
-                  <span className="tag-pill rating">
-                    <Star size={12} fill="#F8C868" stroke="none" /> {selectedExpModal.rating} {t("explore.rating", language)}
-                  </span>
-                </div>
+                  </div>
 
-                <div className="modal-actions-row">
-                  <button 
-                    className={`modal-audio-btn ${playingExpAudioId === selectedExpModal.id ? "playing" : ""}`}
-                    onClick={() => handleToggleAudio(selectedExpModal)}
-                  >
-                    {playingExpAudioId === selectedExpModal.id ? <VolumeX size={16} /> : <Volume2 size={16} />}
-                    <span>{playingExpAudioId === selectedExpModal.id ? t("explore.stopAudioGuide", language) : t("explore.listenVoiceGuide", language)}</span>
-                  </button>
+                  <div className="modal-actions-row">
+                    <button 
+                      className={`modal-audio-btn ${playingExpAudioId === selectedExpModal.id ? "playing" : ""}`}
+                      onClick={() => handleToggleAudio(selectedExpModal)}
+                    >
+                      {playingExpAudioId === selectedExpModal.id ? <VolumeX size={16} /> : <Volume2 size={16} />}
+                      <span>{playingExpAudioId === selectedExpModal.id ? t("explore.stopAudioGuide", language) : t("explore.listenVoiceGuide", language)}</span>
+                    </button>
 
-                  <button className="modal-close-action" onClick={() => setSelectedExpModal(null)}>
-                    {t("explore.closeDetails", language)}
-                  </button>
+                    <button className="modal-close-action" onClick={() => setSelectedExpModal(null)}>
+                      {t("explore.closeDetails", language)}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
     </section>
   );
 }
