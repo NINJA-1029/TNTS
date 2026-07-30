@@ -51,8 +51,8 @@ export function ARExplorerCard({ onLaunchAR, language }) {
                 <span>தமிழ்நாடு</span>
               </div>
               <div className="ar-mock-overlay">
-                <div className="ar-pin pulse">📍 Brihadeeswarar Temple</div>
-                <div className="ar-pin">🌾 Paddy Farmstay</div>
+                <div className="ar-pin pulse">Brihadeeswarar Temple</div>
+                <div className="ar-pin">Paddy Farmstay</div>
               </div>
             </div>
           </div>

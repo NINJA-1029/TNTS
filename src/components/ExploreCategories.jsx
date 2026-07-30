@@ -16,6 +16,7 @@ import {
   Compass
 } from "lucide-react";
 import { HERITAGE_CATEGORIES, EXPERIENCES, DISTRICTS } from "../data/heritageData";
+import { t } from "../data/i18n";
 import { speakAudioGuide, stopAudioGuide } from "../services/gemmaEdgeEngine";
 
 export function ExploreCategories({ language }) {
@@ -53,12 +54,12 @@ export function ExploreCategories({ language }) {
       <div className="section-title-box text-center">
         <div className="section-badge font-serif">
           <Compass size={14} />
-          <span>HERITAGE DISCOVERY HUB</span>
+          <span>{t("explore.discoveryHub", language)}</span>
         </div>
-        <h2 className="main-heading font-serif">Explore Tamil Nadu</h2>
-        <h3 className="tamil-main-heading font-serif">தமிழ்நாட்டை ஆராயுங்கள்</h3>
+        <h2 className="main-heading font-serif">{t("explore.title", language)}</h2>
+        <h3 className="tamil-main-heading font-serif">{language === "ta" ? "" : "தமிழ்நாட்டை ஆராயுங்கள்"}</h3>
         <p className="section-subtext">
-          Discover authentic rural farmstays, ancient Chola & Pallava temples, local food spots, and eco trails.
+          {t("explore.subtitle", language)}
         </p>
 
         {/* Search Bar */}
@@ -66,7 +67,7 @@ export function ExploreCategories({ language }) {
           <Search size={18} className="search-icon" />
           <input 
             type="text" 
-            placeholder={language === "ta" ? "இடங்கள், உணவுகள், கோயில்களைத் தேடுங்கள்..." : "Search temples, food spots, farmstays, districts..."}
+            placeholder={t("explore.searchPlaceholder", language)}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="search-input"
@@ -88,11 +89,11 @@ export function ExploreCategories({ language }) {
           <div className="cat-icon-container agri">
             <Sprout size={30} />
           </div>
-          <h3 className="cat-title font-serif">Agri & Rural</h3>
-          <span className="cat-tamil-title font-serif">விவசாயம் & கிராமப்புறம்</span>
-          <p className="cat-desc">Engage with traditional farming practices and rural farmstays.</p>
+          <h3 className="cat-title font-serif">{t("explore.agriRural", language)}</h3>
+          <span className="cat-tamil-title font-serif">{language !== "ta" ? "விவசாயம் & கிராமப்புறம்" : ""}</span>
+          <p className="cat-desc">{t("explore.engageFarming", language)}</p>
           <button className="explore-cat-link font-serif">
-            <span>Explore Agri</span>
+            <span>{t("explore.exploreAgri", language)}</span>
             <ArrowRight size={14} />
           </button>
         </div>
@@ -104,11 +105,11 @@ export function ExploreCategories({ language }) {
           <div className="cat-icon-container heritage">
             <Landmark size={30} />
           </div>
-          <h3 className="cat-title font-serif">Heritage & Culture</h3>
-          <span className="cat-tamil-title font-serif">பாரம்பரியம் & கலாச்சாரம்</span>
-          <p className="cat-desc">Journey through UNESCO temples, ancient art, and living history.</p>
+          <h3 className="cat-title font-serif">{t("explore.heritageCulture", language)}</h3>
+          <span className="cat-tamil-title font-serif">{language !== "ta" ? "பாரம்பரியம் & கலாச்சாரம்" : ""}</span>
+          <p className="cat-desc">{t("explore.journeyHeritage", language)}</p>
           <button className="explore-cat-link font-serif">
-            <span>Explore Heritage</span>
+            <span>{t("explore.exploreHeritage", language)}</span>
             <ArrowRight size={14} />
           </button>
         </div>
@@ -120,21 +121,21 @@ export function ExploreCategories({ language }) {
           <div className="cat-icon-container eco">
             <Mountain size={30} />
           </div>
-          <h3 className="cat-title font-serif">Eco & Adventure</h3>
-          <span className="cat-tamil-title font-serif">சுற்றுச்சூழல் & சாகசம்</span>
-          <p className="cat-desc">Scenic Western Ghats paths, tea gardens, and zero-carbon trails.</p>
+          <h3 className="cat-title font-serif">{t("explore.ecoAdventure", language)}</h3>
+          <span className="cat-tamil-title font-serif">{language !== "ta" ? "சுற்றுச்சூழல் & சாகசம்" : ""}</span>
+          <p className="cat-desc">{t("explore.scenicTrails", language)}</p>
           <button className="explore-cat-link font-serif">
-            <span>Explore Eco</span>
+            <span>{t("explore.exploreEco", language)}</span>
             <ArrowRight size={14} />
           </button>
         </div>
       </div>
 
-      {/* DISTRICT FILTER DROPDOWN (DROPBOX STYLE) */}
+      {/* DISTRICT FILTER DROPDOWN */}
       <div className="district-dropbox-container">
         <div className="district-dropbox-label font-serif">
           <Filter size={18} className="filter-icon" />
-          <span>FILTER BY DISTRICT (DROPBOX):</span>
+          <span>{t("explore.filterByDistrict", language)}</span>
         </div>
 
         <div className="district-dropbox-wrapper">
@@ -144,12 +145,12 @@ export function ExploreCategories({ language }) {
             onChange={(e) => setSelectedDistrictFilter(e.target.value)}
             className="district-dropbox-select font-serif"
           >
-            <option value="all">📍 All Tamil Nadu Districts ({EXPERIENCES.length} Places Mapped)</option>
+            <option value="all">{t("explore.allDistricts", language)} ({EXPERIENCES.length} {t("explore.placesMapped", language)})</option>
             {DISTRICTS.map((dist) => {
               const countInDist = EXPERIENCES.filter((e) => e.districtId === dist.id).length;
               return (
                 <option key={dist.id} value={dist.id}>
-                  📍 {dist.name} ({dist.tamilName}) — {countInDist} Heritage Places
+                  {dist.name} ({dist.tamilName}) — {countInDist} {t("explore.heritagePlaces", language)}
                 </option>
               );
             })}
@@ -163,35 +164,35 @@ export function ExploreCategories({ language }) {
           className={`filter-chip ${activeCategoryFilter === "all" ? "active" : ""}`}
           onClick={() => setActiveCategoryFilter("all")}
         >
-          All Experiences ({filteredExperiences.length})
+          {t("explore.allExperiences", language)} ({filteredExperiences.length})
         </button>
 
         <button
           className={`filter-chip ${activeCategoryFilter === "heritage" ? "active" : ""}`}
           onClick={() => setActiveCategoryFilter("heritage")}
         >
-          Temples & Monuments ({filteredExperiences.filter(e => e.category === 'heritage').length})
+          {t("explore.templesMonuments", language)} ({filteredExperiences.filter(e => e.category === 'heritage').length})
         </button>
 
         <button
           className={`filter-chip ${activeCategoryFilter === "food" ? "active" : ""}`}
           onClick={() => setActiveCategoryFilter("food")}
         >
-          Famous Regional Food Spots
+          {t("explore.foodSpots", language)}
         </button>
 
         <button
           className={`filter-chip ${activeCategoryFilter === "agri" ? "active" : ""}`}
           onClick={() => setActiveCategoryFilter("agri")}
         >
-          Agri & Farmstays
+          {t("explore.agriFarmstays", language)}
         </button>
 
         <button
           className={`filter-chip ${activeCategoryFilter === "eco" ? "active" : ""}`}
           onClick={() => setActiveCategoryFilter("eco")}
         >
-          Eco & Adventure
+          {t("explore.ecoAdventureFilter", language)}
         </button>
       </div>
 
@@ -203,11 +204,6 @@ export function ExploreCategories({ language }) {
               <div className="exp-image-box">
                 <img src={exp.image} alt={exp.title} loading="lazy" />
                 <div className="exp-category-badge">{exp.category.toUpperCase()}</div>
-                {exp.safeForWomen && (
-                  <div className="exp-safety-tag">
-                    <ShieldCheck size={12} /> Safe for Women
-                  </div>
-                )}
               </div>
 
               <div className="exp-content">
@@ -218,6 +214,14 @@ export function ExploreCategories({ language }) {
 
                 <h4 className="exp-title font-serif">{exp.title}</h4>
                 <p className="exp-desc">{exp.description}</p>
+
+                {/* Prominent Safe for Women tag in content area */}
+                {exp.safeForWomen && (
+                  <div className="exp-safety-content-tag">
+                    <ShieldCheck size={14} />
+                    <span>{t("explore.safeForWomen", language)}</span>
+                  </div>
+                )}
 
                 <div className="exp-meta-row">
                   <div className="meta-price">{exp.price}</div>
@@ -233,7 +237,7 @@ export function ExploreCategories({ language }) {
                     onClick={() => setSelectedExpModal(exp)}
                   >
                     <Info size={14} />
-                    <span>Details</span>
+                    <span>{t("explore.details", language)}</span>
                   </button>
 
                   <button 
@@ -241,7 +245,7 @@ export function ExploreCategories({ language }) {
                     onClick={() => handleToggleAudio(exp)}
                   >
                     {playingExpAudioId === exp.id ? <VolumeX size={14} /> : <Volume2 size={14} />}
-                    <span>{playingExpAudioId === exp.id ? "Stop Voice" : "Voice Guide"}</span>
+                    <span>{playingExpAudioId === exp.id ? t("explore.stopVoice", language) : t("planner.voiceGuide", language)}</span>
                   </button>
                 </div>
               </div>
@@ -251,8 +255,8 @@ export function ExploreCategories({ language }) {
       ) : (
         <div className="no-experiences-box">
           <Compass size={40} />
-          <h3>No heritage experiences match your selected filter</h3>
-          <p>Try switching district or category filter to discover more places.</p>
+          <h3>{t("explore.noResults", language)}</h3>
+          <p>{t("explore.trySwitch", language)}</p>
           <button 
             className="reset-filter-btn"
             onClick={() => {
@@ -261,7 +265,7 @@ export function ExploreCategories({ language }) {
               setSearchQuery("");
             }}
           >
-            Reset Filters
+            {t("explore.resetFilters", language)}
           </button>
         </div>
       )}
@@ -293,11 +297,13 @@ export function ExploreCategories({ language }) {
                 <div className="modal-tags-row">
                   {selectedExpModal.safeForWomen && (
                     <span className="tag-pill safe">
-                      <ShieldCheck size={12} /> Safe for Women Certified
+                      <ShieldCheck size={12} /> {t("explore.safeForWomenCertified", language)}
                     </span>
                   )}
                   <span className="tag-pill price">{selectedExpModal.price}</span>
-                  <span className="tag-pill rating">⭐ {selectedExpModal.rating} Rating</span>
+                  <span className="tag-pill rating">
+                    <Star size={12} fill="#F8C868" stroke="none" /> {selectedExpModal.rating} {t("explore.rating", language)}
+                  </span>
                 </div>
 
                 <div className="modal-actions-row">
@@ -306,11 +312,11 @@ export function ExploreCategories({ language }) {
                     onClick={() => handleToggleAudio(selectedExpModal)}
                   >
                     {playingExpAudioId === selectedExpModal.id ? <VolumeX size={16} /> : <Volume2 size={16} />}
-                    <span>{playingExpAudioId === selectedExpModal.id ? "Stop Audio Guide" : "Listen Offline Voice Guide"}</span>
+                    <span>{playingExpAudioId === selectedExpModal.id ? t("explore.stopAudioGuide", language) : t("explore.listenVoiceGuide", language)}</span>
                   </button>
 
                   <button className="modal-close-action" onClick={() => setSelectedExpModal(null)}>
-                    Close Details
+                    {t("explore.closeDetails", language)}
                   </button>
                 </div>
               </div>

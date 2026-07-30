@@ -6,7 +6,23 @@ export const DISTRICTS = [
     id: "madurai",
     name: "Madurai District",
     tamilName: "மதுரை மாவட்டம்",
+    names: {
+      en: "Madurai District",
+      ta: "மதுரை மாவட்டம்",
+      te: "మధురై జిల్లా",
+      hi: "मदुरै जिला",
+      ml: "മധുര ജില്ല",
+      kn: "ಮಧುರೈ ಜಿಲ್ಲೆ"
+    },
     zone: "South TN",
+    zones: {
+      en: "South TN",
+      ta: "தெற்கு மண்டலம்",
+      te: "దక్షిణ మండలం",
+      hi: "दक्षिण क्षेत्र",
+      ml: "തെക്കൻ മേഖല",
+      kn: "ದಕ್ಷಿಣ ವಲಯ"
+    },
     image: "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=800&q=80",
     description: "The Cultural Capital of Tamil Nadu, famous for Meenakshi Amman Temple, Sungudi Sarees, Jigarthanda & Bun Parotta.",
     tamilDescription: "தமிழ்நாட்டின் பண்பாட்டுத் தலைநகரம், மீனாட்சி அம்மன் கோயில், ஜிகர்தண்டா மற்றும் சுவையான உணவு மையம்.",
@@ -19,7 +35,23 @@ export const DISTRICTS = [
     id: "thanjavur",
     name: "Thanjavur District",
     tamilName: "தஞ்சாவூர் மாவட்டம்",
+    names: {
+      en: "Thanjavur District",
+      ta: "தஞ்சாவூர் மாவட்டம்",
+      te: "తంజావూరు జిల్లా",
+      hi: "तंजावुर जिला",
+      ml: "തഞ്ചാവൂർ ജില്ല",
+      kn: "ತಂಜಾವೂರು ಜಿಲ್ಲೆ"
+    },
     zone: "Central TN",
+    zones: {
+      en: "Central TN",
+      ta: "மத்திய மண்டலம்",
+      te: "మధ్య మండలం",
+      hi: "मध्य क्षेत्र",
+      ml: "മധ്യ മേഖല",
+      kn: "ಮಧ್ಯ ವಲಯ"
+    },
     image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
     description: "The Rice Bowl of Tamil Nadu, cradle of Chola Temples (UNESCO), Tanjore Art Plates, and Degree Filter Coffee.",
     tamilDescription: "தமிழ்நாட்டின் நெற்களஞ்சியம், பெருவுடையார் கோயில் மற்றும் தஞ்சாவூர் பில்டர் காபி மையம்.",
@@ -32,7 +64,23 @@ export const DISTRICTS = [
     id: "chettinad",
     name: "Sivagangai (Chettinad) District",
     tamilName: "சிவங்கை - செட்டிநாடு மாவட்டம்",
+    names: {
+      en: "Sivagangai (Chettinad) District",
+      ta: "சிவங்கை (செட்டிநாடு) மாவட்டம்",
+      te: "శివగంగ (చెట్టినాడు) జిల్లా",
+      hi: "शिवगंगा (चेट्टिनाड) जिला",
+      ml: "ശിവഗംഗ (ചെട്ടിനാട്) ജില്ല",
+      kn: "ಶಿವಗಂಗಾ (ಚೆಟ್ಟಿನಾಡು) ಜಿಲ್ಲೆ"
+    },
     zone: "South-East TN",
+    zones: {
+      en: "South-East TN",
+      ta: "தென்கிழக்கு மண்டலம்",
+      te: "ఆగ్నేయ మండలం",
+      hi: "दक्षिण-पूर्व क्षेत्र",
+      ml: "തെക്ക്-കിഴക്കൻ മേഖല",
+      kn: "ಆಗ್ನೇಯ ವಲಯ"
+    },
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
     description: "Land of grand 100-room mansions, Athangudi handmade tiles, Athangudi crafts, and world-renowned Pepper Spiced Cuisine.",
     tamilDescription: "செட்டிநாட்டு அரண்மனைகள், ஆத்தங்குடி ஓடுகள் மற்றும் செட்டிநாட்டு மிளகு சமையல் மையம்.",
@@ -45,7 +93,23 @@ export const DISTRICTS = [
     id: "ooty",
     name: "Nilgiris (Ooty) District",
     tamilName: "நீலகிரி (ஊட்டி) மாவட்டம்",
+    names: {
+      en: "Nilgiris (Ooty) District",
+      ta: "நீலகிரி (ஊட்டி) மாவட்டம்",
+      te: "నీలగిరి (ఊటీ) జిల్లా",
+      hi: "नीलगिरी (ऊटी) जिला",
+      ml: "നീലിഗിരി (ഊട്ടി) ജില്ല",
+      kn: "ನೀಲಗಿರಿ (ಊಟಿ) ಜಿಲ್ಲೆ"
+    },
     zone: "Western Ghats TN",
+    zones: {
+      en: "Western Ghats TN",
+      ta: "மேற்கு தொடர்ச்சி மலை",
+      te: "పశ్చిమ కనుమల మండలం",
+      hi: "पश्चिमी घाट क्षेत्र",
+      ml: "പശ്ചിമഘട്ട മേഖല",
+      kn: "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ವಲಯ"
+    },
     image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80",
     description: "Queen of Hill Stations, organic tea gardens, Toda tribal settlements, mountain steam train, and homemade chocolates.",
     tamilDescription: "நீலகிரி மலைத் தேயிலைத் தோட்டங்கள், தோடர் பழங்குடியினர் மற்றும் கைவினை சாக்லேட் மையம்.",
@@ -58,7 +122,23 @@ export const DISTRICTS = [
     id: "kanyakumari",
     name: "Kanyakumari District",
     tamilName: "கன்னியாகுமரி மாவட்டம்",
+    names: {
+      en: "Kanyakumari District",
+      ta: "கன்னியாகுமரி மாவட்டம்",
+      te: "కన్యాకుమారి జిల్లా",
+      hi: "कन्याकुमारी जिला",
+      ml: "കന്യാകുമാരി ജില്ല",
+      kn: "ಕನ್ಯಾಕುಮಾರಿ ಜಿಲ್ಲೆ"
+    },
     zone: "Southern Tip TN",
+    zones: {
+      en: "Southern Tip TN",
+      ta: "தென்கோடி மண்டலம்",
+      te: "దక్షిణ కొస మండలం",
+      hi: "दक्षिणी छोर क्षेत्र",
+      ml: "തെക്കൻ അഗ്രം മേഖല",
+      kn: "ದಕ್ಷಿಣ ತುದಿಯ ವಲಯ"
+    },
     image: "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=800&q=80",
     description: "Confluence of three oceans, Thiruvalluvar Statue, Padmanabhapuram Wooden Palace, and coastal Nanjil cuisine.",
     tamilDescription: "முக்கடல் சங்கமிக்கும் இடம், 133 அடி திருவள்ளுவர் சிலை மற்றும் பத்மநாபபுரம் மர அரண்மனை.",
@@ -71,7 +151,23 @@ export const DISTRICTS = [
     id: "mahabalipuram",
     name: "Chengalpattu (Mamallapuram) District",
     tamilName: "செங்கல்பட்டு (மாமல்லபுரம்) மாவட்டம்",
+    names: {
+      en: "Chengalpattu (Mamallapuram) District",
+      ta: "செங்கல்பட்டு (மாமல்லபுரம்) மாவட்டம்",
+      te: "చెంగల్పట్టు (మామల్లపురం) జిల్లా",
+      hi: "चेंगलपट्टू (मामल्लापुरम) जिला",
+      ml: "ചെങ്കൽപട്ട് (മാമല്ലപുരം) ജില്ല",
+      kn: "ಚೆಂಗಲ್ಪಟ್ಟು (ಮಾಮಲ್ಲಪುರಂ) ಜಿಲ್ಲೆ"
+    },
     zone: "Coromandel Coast TN",
+    zones: {
+      en: "Coromandel Coast TN",
+      ta: "சோழமண்டல கடற்கரை",
+      te: "కోరమాండల్ తీర మండలం",
+      hi: "कोरोमंडल तट क्षेत्र",
+      ml: "കോറോമണ്ടൽ തീര മേഖല",
+      kn: "ಕೋರಮಂಡಲ ತೀರ ವಲಯ"
+    },
     image: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80",
     description: "7th-century Pallava cave temples, Shore Temple (UNESCO), Arjuna's Penance, and fresh coastal seafood.",
     tamilDescription: "பல்லவர் கால குடைவரை கோயில்கள், கடற்கரை கோயில் மற்றும் சோழ சிற்பக் கலை மையம்.",
@@ -81,6 +177,13 @@ export const DISTRICTS = [
     tags: ["Shore Temple", "Pancha Rathas", "Pallava Carvings"]
   }
 ];
+
+export function getDistrictLabel(districtObj, langCode = "en") {
+  if (!districtObj) return "";
+  const name = districtObj.names?.[langCode] || districtObj.name;
+  const zone = districtObj.zones?.[langCode] || districtObj.zone;
+  return `${name} - ${zone}`;
+}
 
 export const HERITAGE_CATEGORIES = [
   {
@@ -144,30 +247,30 @@ export const EMERGENCY_NUMBERS = [
 
 // High quality verified stock photos for South Indian Temples, Architecture, Food, Farms, and Nature
 const IMGS = {
-  meenakshi: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80",
-  bigTemple: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80",
-  shoreTemple: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=600&q=80",
-  stoneTemple: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80",
-  statue: "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=600&q=80",
-  mansion: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
-  gopuramCarvings: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=600&q=80",
-  pillarHall: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80",
-  palaceStucco: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
-  sacredTank: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80",
-  caveTemple: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=600&q=80",
-  foodDosa: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
-  foodCoffee: "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=600&q=80",
-  foodBiryani: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80",
-  foodCurry: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80",
-  foodDrink: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80",
-  farmPaddy: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80",
-  farmCoconut: "https://images.unsplash.com/photo-1592417817098-8f3d6eb231fc?auto=format&fit=crop&w=600&q=80",
-  farmHarvest: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80",
-  farmPottery: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=600&q=80",
-  ecoTea: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=600&q=80",
-  ecoWaterfall: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80",
-  ecoCoast: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80",
-  ecoForest: "https://images.unsplash.com/photo-1511497584788-876761465587?auto=format&fit=crop&w=600&q=80"
+  meenakshi: "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=800&q=80",
+  bigTemple: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+  shoreTemple: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80",
+  stoneTemple: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+  statue: "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=800&q=80",
+  mansion: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80",
+  gopuramCarvings: "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=800&q=80",
+  pillarHall: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+  palaceStucco: "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?auto=format&fit=crop&w=800&q=80",
+  sacredTank: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+  caveTemple: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80",
+  foodDosa: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80",
+  foodCoffee: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+  foodBiryani: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+  foodCurry: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+  foodDrink: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+  farmPaddy: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+  farmCoconut: "https://images.unsplash.com/photo-1592417817098-8f3d6eb231fc?auto=format&fit=crop&w=800&q=80",
+  farmHarvest: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80",
+  farmPottery: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80",
+  ecoTea: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80",
+  ecoWaterfall: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+  ecoCoast: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+  ecoForest: "https://images.unsplash.com/photo-1511497584788-876761465587?auto=format&fit=crop&w=800&q=80"
 };
 
 // Generates comprehensive list of 30+ Madurai Heritage Sites & 100+ authentic Tamil Nadu places
@@ -890,40 +993,193 @@ export const SAMPLE_ITINERARIES = {
       {
         day: 1,
         title: "Day 1: Meenakshi Amman Temple & Nayak Palace",
-        tamilTitle: "நாள் 1: மீனாட்சி அம்மன் கோயில் & அரண்மனை",
-        location: "Madurai District (South TN Zone)",
+        localizedTitles: {
+          en: "Day 1: Meenakshi Amman Temple & Nayak Palace",
+          ta: "நாள் 1: மீனாட்சி அம்மன் கோயில் & அரண்மனை தரிசனம்",
+          te: "రోజు 1: మీనాక్షి అమ్మవారి ఆలయం & నాయక్ మహల్",
+          hi: "दिन 1: मीनाक्षी अम्मन मंदिर और नायक महल दर्शन",
+          ml: "ദിവസം 1: മീനാക്ഷി അമ്മൻ ക്ഷേത്രവും നായക് കൊട്ടാരവും",
+          kn: "ದಿನ 1: ಮೀನಾಕ್ಷಿ ಅಮ್ಮನ್ ದೇವಾಲಯ & ನಾಯಕ ಅರಮನೆ"
+        },
+        location: "Madurai District",
         activities: [
-          "Morning visit to Meenakshi Sundareswarar Temple (14 Gopurams & Golden Lotus Tank)",
-          "Explore the Thousand Pillar Hall and 33,000 carved stone sculptures",
-          "Visit Thirumalai Nayakar Mahal & admire 82-foot white stucco columns",
-          "Evening: Taste famous Madurai Jigarthanda at East Marret Street"
+          "06:00 AM - 08:30 AM (Optimal Low Crowd 15%): Morning visit to Meenakshi Sundareswarar Temple (14 Gopurams & Golden Lotus Tank)",
+          "09:00 AM - 11:00 AM: Explore the Thousand Pillar Hall and 33,000 carved stone sculptures",
+          "11:30 AM - 01:30 PM: Visit Thirumalai Nayakar Mahal & admire 82-foot white stucco columns",
+          "05:30 PM - 07:00 PM: Taste famous Madurai Jigarthanda at East Marret Street"
         ],
-        gemmaTip: "Visit Meenakshi temple early morning (6:00 - 8:30 AM) to witness daily morning pudhu mandapam rituals without crowd."
+        localizedActivities: {
+          en: [
+            "06:00 AM - 08:30 AM (Optimal Low Crowd 15%): Morning visit to Meenakshi Sundareswarar Temple (14 Gopurams & Golden Lotus Tank)",
+            "09:00 AM - 11:00 AM: Explore the Thousand Pillar Hall and 33,000 carved stone sculptures",
+            "11:30 AM - 01:30 PM: Visit Thirumalai Nayakar Mahal & admire 82-foot white stucco columns",
+            "05:30 PM - 07:00 PM: Taste famous Madurai Jigarthanda at East Marret Street"
+          ],
+          ta: [
+            "06:00 AM - 08:30 AM (குறைந்த நெரிசல் 15%): மதுரை மீனாட்சி சுந்தரேஸ்வரர் திருக்கோயில் தரிசனம் (14 கோபுரங்கள் & பொற்றாமரைக் குளம்)",
+            "09:00 AM - 11:00 AM: ஆயிரம் கால் மண்டபம் மற்றும் 33,000 கல் சிற்பங்களை ஆராய்தல்",
+            "11:30 AM - 01:30 PM: திருமலை நாயக்கர் மஹால் மற்றும் 82 அடி வெள்ளை தூண்களை பார்வையிடுதல்",
+            "05:30 PM - 07:00 PM: கிழக்கு மாரட் வீதியில் புகழ்பெற்ற மதுரை ஜிகர்தண்டா சுவைத்தல்"
+          ],
+          te: [
+            "06:00 AM - 08:30 AM (తక్కువ రద్దీ 15%): ఉదయం మీనాక్షి సుందరేశ్వర దేవాలయ దర్శనం (14 గోపురాలు & బంగారు తామర కోనేరు)",
+            "09:00 AM - 11:00 AM: వేయి స్తంభాల మంటపం మరియు 33,000 రాతి శిల్పాల సందర్శన",
+            "11:30 AM - 01:30 PM: తిరుమలై నాయకర్ మహల్ సందర్శన",
+            "05:30 PM - 07:00 PM: ఈస్ట్ మారెట్ వీధిలో ప్రసిద్ధ మధురై జిగర్తండా రుచి చూడటం"
+          ],
+          hi: [
+            "06:00 AM - 08:30 AM (कम भीड़ 15%): सुबह मीनाक्षी सुंदरेश्वर मंदिर दर्शन (14 गोपुरम और स्वर्ण कमल तालाब)",
+            "09:00 AM - 11:00 AM: हजार स्तंभों का मंडप और 33,000 तराशे गए पत्थर की मूर्तियाँ देखना",
+            "11:30 AM - 01:30 PM: तिरुमलाई नायक महल और 82-फीट सफेद स्तंभ देखना",
+            "05:30 PM - 07:00 PM: ईस्ट मैरेट स्ट्रीट पर प्रसिद्ध मदुरै जिगरथंडा का स्वाद लेना"
+          ],
+          ml: [
+            "06:00 AM - 08:30 AM (കുറഞ്ഞ തിരക്ക് 15%): രാവിലത്തെ മീനാക്ഷി സുന്ദരേശ്വര ക്ഷേത്ര ദർശനം",
+            "09:00 AM - 11:00 AM: ആയിരം കാൽ മണ്ഡപവും 33,000 കൽ ശില്പങ്ങളും കാണൽ",
+            "11:30 AM - 01:30 PM: തിരുമലൈ നായക് കൊട്ടാരം സന്ദർശനം",
+            "05:30 PM - 07:00 PM: പ്രശസ്തമായ മധുര ജിഗർതണ്ട രുചിക്കൽ"
+          ],
+          kn: [
+            "06:00 AM - 08:30 AM (ಕಡಿಮೆ ಜನಸಂದಣಿ 15%): ಬೆಳಿಗ್ಗೆ ಮೀನಾಕ್ಷಿ ಸುಂದರೇಶ್ವರ ದೇವಾಲಯ ದರ್ಶನ",
+            "09:00 AM - 11:00 AM: ಸಾವಿರ ಕಂಬಗಳ ಮಂಟಪ ಮತ್ತು 33,000 ಕಲ್ಲಿನ ಕೆತ್ತನೆಗಳ ವೀಕ್ಷಣೆ",
+            "11:30 AM - 01:30 PM: ತಿರುಮಲೈ ನಾಯಕ ಅರಮನೆ ಭೇಟಿ",
+            "05:30 PM - 07:00 PM: ಪ್ರಸಿದ್ಧ ಮಧುರೈ ಜಿಗರ್ತಂಡ ಸವಿಯುವುದು"
+          ]
+        },
+        gemmaTip: "Gemma Crowd Insight: Scheduled Meenakshi temple at 6:00 AM (15% density). Avoided 10:30 AM Peak queue (90% density).",
+        localizedTips: {
+          en: "Gemma Crowd Insight: Scheduled Meenakshi temple at 6:00 AM (15% density). Avoided 10:30 AM Peak queue (90% density).",
+          ta: "ஜெம்மா நெரிசல் நுண்ணறிவு: மீனாட்சி அம்மன் கோயில் காலை 6:00 மணிக்கு திட்டமிடப்பட்டது (15% நெரிசல்). காலை 10:30 மணி உச்ச நெரிசல் (90%) தவிர்க்கப்பட்டது.",
+          te: "జెమ్మా రద్దీ అంతర్దృష్టి: మీనాక్షి ఆలయం ఉదయం 6:00 గంటలకు షెడ్యూల్ చేయబడింది (15% రద్దీ). ఉదయం 10:30 గంటల గరిష్ట రద్దీ (90%) నివారించబడింది.",
+          hi: "जेम्मा भीड़ अंतर्दृष्टि: मीनाक्षी मंदिर सुबह 6:00 बजे निर्धारित (15% भीड़)। सुबह 10:30 बजे की पीक कतार (90% भीड़) से बचा गया।",
+          ml: "ജെമ്മ ആൾക്കൂട്ട ഇൻസൈറ്റ്: രാവിലെ 6:00 ന് ക്ഷേത്ര ദർശനം ക്രമീകരിച്ചു (15% തിരക്ക്). രാവിലെ 10:30 ലെ ഉയർന്ന തിരക്ക് (90%) ഒഴിവാക്കി.",
+          kn: "ಜೆಮ್ಮಾ ಜನಸಂದಣಿ ಒಳನೋಟ: ಬೆಳಿಗ್ಗೆ 6:00 ಕ್ಕೆ ದೇವಾಲಯ ದರ್ಶನ ನಿಗದಿಪಡಿಸಲಾಗಿದೆ (15% ಜನಸಂದಣಿ). ಬೆಳಿಗ್ಗೆ 10:30 ರ ಗರಿಷ್ಠ ಕಾಯುವ ಸಾಲು (90%) ತಪ್ಪಿಸಲಾಗಿದೆ."
+        }
       },
       {
         day: 2,
         title: "Day 2: Alagar Hills & Thiruparankundram Cave Temple",
-        tamilTitle: "நாள் 2: அழகர் கோயில் & திருப்பரங்குன்றம் குடைவரை",
-        location: "Madurai District (South TN Zone)",
+        localizedTitles: {
+          en: "Day 2: Alagar Hills & Thiruparankundram Cave Temple",
+          ta: "நாள் 2: அழகர் கோயில் & திருப்பரங்குன்றம் குடைவரை",
+          te: "రోజు 2: అళగర్ కొండలు & తిరుపరంకుండ్రమ్ గుహ ఆలయం",
+          hi: "दिन 2: अलगर पहाड़ियाँ और तिरुपरनकुंडरम गुफा मंदिर",
+          ml: "ദിവസം 2: അളഗർ കുന്നുകളും തിരുപ്പറൻകുണ്ട്രം ഗുഹാക്ഷേത്രവും",
+          kn: "ದಿನ 2: ಅಳಗರ್ ಬೆಟ್ಟಗಳು & ತಿರುಪರಂಕುಂಡ್ರಂ ಗುಹಾ ದೇವಾಲಯ"
+        },
+        location: "Madurai District",
         activities: [
-          "Morning trip to Kallazhagar Temple at the foot of Alagar Hills",
-          "Ascend to Pazhamudhircholai Murugan Shrine in upper forest canopy",
-          "Explore 6th-century Pandya rock-cut cave temple at Thiruparankundram",
-          "Dinner: Enjoy Simmakkal Konar Mess Kari Dosa & Bun Parotta"
+          "07:00 AM - 09:30 AM (Low Crowd 20%): Morning trip to Kallazhagar Temple at the foot of Alagar Hills",
+          "10:00 AM - 11:30 AM: Ascend to Pazhamudhircholai Murugan Shrine in upper forest canopy",
+          "03:30 PM - 05:30 PM: Explore 6th-century Pandya rock-cut cave temple at Thiruparankundram",
+          "07:30 PM - 09:00 PM: Dinner - Enjoy Simmakkal Konar Mess Kari Dosa & Bun Parotta"
         ],
-        gemmaTip: "Madurai District has a safety rating of 9.8 / 10 (Safe for Women). 24/7 tourist helpline available."
+        localizedActivities: {
+          en: [
+            "07:00 AM - 09:30 AM (Low Crowd 20%): Morning trip to Kallazhagar Temple at the foot of Alagar Hills",
+            "10:00 AM - 11:30 AM: Ascend to Pazhamudhircholai Murugan Shrine in upper forest canopy",
+            "03:30 PM - 05:30 PM: Explore 6th-century Pandya rock-cut cave temple at Thiruparankundram",
+            "07:30 PM - 09:00 PM: Dinner - Enjoy Simmakkal Konar Mess Kari Dosa & Bun Parotta"
+          ],
+          ta: [
+            "07:00 AM - 09:30 AM (குறைந்த நெரிசல் 20%): அழகர்மலை அடிவாரத்தில் உள்ள கள்ளழகர் திருக்கோயில் பயணம்",
+            "10:00 AM - 11:30 AM: சோலைமலை பழமுதிர்ச்சோலை முருகன் திருக்கோயில் தரிசனம்",
+            "03:30 PM - 05:30 PM: திருப்பரங்குன்றத்தில் உள்ள 6 ஆம் நூற்றாண்டு பாண்டியர் குடைவரை கோயில்",
+            "07:30 PM - 09:00 PM: இரவு உணவு - சிம்மக்கல் கோனார் மெஸ் காரி தோசை & பன் பரோட்டா"
+          ],
+          te: [
+            "07:00 AM - 09:30 AM (తక్కువ రద్దీ 20%): అళగర్ కొండల వద్ద కళ్ళళగర్ దేవాలయ సందర్శన",
+            "10:00 AM - 11:30 AM: పళముదిర్చోలై మురుగన్ ఆలయ దర్శనం",
+            "03:30 PM - 05:30 PM: తిరుపరంకుండ్రమ్ 6వ శతాబ్దపు పాండ్య రాతి గుహ ఆలయం",
+            "07:30 PM - 09:00 PM: రాత్రి భోజనం - సిమ్మక్కల్ కొనార్ మెస్ కారీ దోశ & బన్ పరోటా"
+          ],
+          hi: [
+            "07:00 AM - 09:30 AM (कम भीड़ 20%): अलगर पहाड़ियों की तलहटी में कल्लालगर मंदिर यात्रा",
+            "10:00 AM - 11:30 AM: पलमुधिरचोलाई मुरुगन मंदिर दर्शन",
+            "03:30 PM - 05:30 PM: तिरुपरनकुंडरम में 6ठी शताब्दी का पाण्ड्य चट्टान काटकर बनाया गया गुफा मंदिर",
+            "07:30 PM - 09:00 PM: रात का खाना - सिम्मक्कल कोनार मेस कारी डोसा और बन परोटा"
+          ],
+          ml: [
+            "07:00 AM - 09:30 AM (കുറഞ്ഞ തിരക്ക് 20%): കള്ളളഗർ ക്ഷേത്ര സന്ദർശനം",
+            "10:00 AM - 11:30 AM: പഴമുതിർച്ചോലൈ മുരുകൻ ക്ഷേത്ര ദർശനം",
+            "03:30 PM - 05:30 PM: തിരുപ്പറൻകുണ്ട്രം ഗുഹാക്ഷേത്രം",
+            "07:30 PM - 09:00 PM: രാത്രി ഭക്ഷണം - കരി ദോശയും ബൺ പൊറോട്ടയും"
+          ],
+          kn: [
+            "07:00 AM - 09:30 AM (ಕಡಿಮೆ ಜನಸಂದಣಿ 20%): ಕಳ್ಳಳಗರ್ ದೇವಾಲಯ ಪ್ರವಾಸ",
+            "10:00 AM - 11:30 AM: ಪಳಮುದಿರ್ಚೋಲೈ ಮುರುಗನ್ ದೇವಾಲಯ ದರ್ಶನ",
+            "03:30 PM - 05:30 PM: ತಿರುಪರಂಕುಂಡ್ರಂ 6 ನೇ ಶತಮಾನದ ಪಾಂಡ್ಯ ಗುಹಾ ದೇವಾಲಯ",
+            "07:30 PM - 09:00 PM: ರಾತ್ರಿ ಊಟ - ಮಧುರೈ ಖ್ಯಾತ ಕಾರಿ ದೋಸೆ & ಬನ್ ಪರೋಟ"
+          ]
+        },
+        gemmaTip: "Gemma Crowd Insight: Alagar Kovil foot temple is tranquil during morning hours (20% crowd density). Safe for female solo travelers.",
+        localizedTips: {
+          en: "Gemma Crowd Insight: Alagar Kovil foot temple is tranquil during morning hours (20% crowd density). Safe for female solo travelers.",
+          ta: "ஜெம்மா நெரிசல் நுண்ணறிவு: அழகர் கோயில் காலை வேளையில் அமைதியாகவும் குறைந்த நெரிசலுடனும் இருக்கும் (20%).",
+          te: "జెమ్మా రద్దీ అంతర్దృష్టి: అళగర్ కోవిల్ ఉదయం వేళల్లో ప్రశాంతంగా ఉంటుంది (20% రద్దీ).",
+          hi: "जेम्मा भीड़ अंतर्दृष्टि: अलगर कोविल सुबह के समय शांत रहता है (20% भीड़)। महिला एकल यात्रियों के लिए सुरक्षित।",
+          ml: "ജെമ്മ ആൾക്കൂട്ട ഇൻസൈറ്റ്: അളഗർ കോവിൽ രാവിലെ ശാന്തമാണ് (20% തിരക്ക്).",
+          kn: "ಜೆಮ್ಮಾ ಜನಸಂದಣಿ ಒಳನೋಟ: ಅಳಗರ್ ಕೋವಿಲ್ ಬೆಳಿಗ್ಗೆ ಪ್ರಶಾಂತವಾಗಿರುತ್ತದೆ (20% ಜನಸಂದಣಿ)."
+        }
       },
       {
         day: 3,
         title: "Day 3: Vilachery Pottery Guild & Vaigai Paddy Farmstay",
-        tamilTitle: "நாள் 3: விளச்சேரி கைவினை கிராமம் & வைகை பண்ணை",
-        location: "Madurai District (South TN Zone)",
+        localizedTitles: {
+          en: "Day 3: Vilachery Pottery Guild & Vaigai Paddy Farmstay",
+          ta: "நாள் 3: விளச்சேரி கைவினை கிராமம் & வைகை பண்ணை",
+          te: "రోజు 3: విలచ్చేరి మట్టి పాత్రల గ్రామం & వైగై ఫార్మ్‌స్టే",
+          hi: "दिन 3: विलचेरी मिट्टी के बर्तन शिल्प गाँव और वैगई फ़ार्मस्टे",
+          ml: "ദിവസം 3: വിളച്ചേരി മൺപാത്ര ഗ്രാമവും വൈഗൈ ഫാംസ്റ്റേയും",
+          kn: "ದಿನ 3: ವಿಲಚ್ಚೇರಿ ಮಡಕೆ ಕರಕುಶಲ ಹಳ್ಳಿ & ವೈಗೈ ಫಾರ್ಮ್‌ಸ್ಟೇ"
+        },
+        location: "Madurai District",
         activities: [
-          "Visit Vilachery artisan village to watch clay Ayyanar horse making",
-          "Explore Samanar Malai 2,000-year-old Jain cave inscriptions & Tamil-Brahmi script",
-          "Relax at Sholavandan organic paddy farmstay along Vaigai river"
+          "08:30 AM - 11:00 AM: Visit Vilachery artisan village to watch clay Ayyanar horse making",
+          "11:30 AM - 01:30 PM: Explore Samanar Malai 2,000-year-old Jain cave inscriptions & Tamil-Brahmi script",
+          "03:00 PM - 06:00 PM: Relax at Sholavandan organic paddy farmstay along Vaigai river"
         ],
-        gemmaTip: "Zero-carbon eco transit available from Madurai Junction to Sholavandan farmstay."
+        localizedActivities: {
+          en: [
+            "08:30 AM - 11:00 AM: Visit Vilachery artisan village to watch clay Ayyanar horse making",
+            "11:30 AM - 01:30 PM: Explore Samanar Malai 2,000-year-old Jain cave inscriptions & Tamil-Brahmi script",
+            "03:00 PM - 06:00 PM: Relax at Sholavandan organic paddy farmstay along Vaigai river"
+          ],
+          ta: [
+            "08:30 AM - 11:00 AM: விளச்சேரி கைவினைஞர்கள் கிராமத்தில் களிமண் அய்யனார் குதிரை தயாரிப்பைப் பார்வையிடுதல்",
+            "11:30 AM - 01:30 PM: சமணர் மலை 2,000 ஆண்டுகள் பழமையான ஜைன குகைக் கல்வெட்டுகள் & தமிழ்-பிராமி எழுத்துக்கள்",
+            "03:00 PM - 06:00 PM: சோழவந்தான் வைகை ஆற்றுப் படுகையில் உள்ள இயற்கை நெல் பண்ணையில் தங்குதல்"
+          ],
+          te: [
+            "08:30 AM - 11:00 AM: విలచ్చేరి కళాకారుల గ్రామంలో మట్టి గుర్రాల తయారీ పరిశీలన",
+            "11:30 AM - 01:30 PM: సమణర్ మలై 2,000 సంవత్సరాల నాటి జైన గుహ శాసనాలు",
+            "03:00 PM - 06:00 PM: చోళవందన్ వైగై నది వద్ద ఆర్గానిక్ వరి పొలాల్లో విశ్రాంతి"
+          ],
+          hi: [
+            "08:30 AM - 11:00 AM: विलचेरी शिल्प गांव में मिट्टी के अय्यनार घोड़े बनते देखना",
+            "11:30 AM - 01:30 PM: समनार मलई 2,000 साल पुराने जैन गुफा शिलालेख और तमिल-ब्राह्मी लिपि",
+            "03:00 PM - 06:00 PM: वैगई नदी के किनारे शोलावनदान जैविक धान खेत में आराम"
+          ],
+          ml: [
+            "08:30 AM - 11:00 AM: വിളച്ചേരി ഗ്രാമം സന്ദർശനം",
+            "11:30 AM - 01:30 PM: സമണർ മലൈ 2,000 വർഷം പഴക്കമുള്ള ജൈന ഗുഹാ ലിഖിതങ്ങൾ",
+            "03:00 PM - 06:00 PM: വൈഗൈ നദീതീരത്തെ ഓർഗാനിക് ഫാംസ്റ്റേ"
+          ],
+          kn: [
+            "08:30 AM - 11:00 AM: ವಿಲಚ್ಚೇರಿ ಕರಕುಶಲ ಹಳ್ಳಿಯಲ್ಲಿ ಮಣ್ಣಿನ ಕುದುರೆ ತಯಾರಿಕೆ ವೀಕ್ಷಣೆ",
+            "11:30 AM - 01:30 PM: ಸಮಣರ್ ಮಲೈ 2,000 ವರ್ಷ ಹಳೆಯ ಜೈನ ಗುಹಾ ಶಾಸನಗಳು",
+            "03:00 PM - 06:00 PM: ವೈಗೈ ನದಿ ದಂಡೆಯ ಸಾವಯವ ಫಾರ್ಮ್‌ಸ್ಟೇ"
+          ]
+        },
+        gemmaTip: "Gemma Sustainable Insight: Zero-carbon eco transit available from Madurai Junction to Sholavandan farmstay.",
+        localizedTips: {
+          en: "Gemma Sustainable Insight: Zero-carbon eco transit available from Madurai Junction to Sholavandan farmstay.",
+          ta: "ஜெம்மா சூழல் நுண்ணறிவு: மதுரை சந்திப்பில் இருந்து சோழவந்தான் பண்ணைக்கு கார்பன்-இல்லா சூழல் வாகன வசதி உள்ளது.",
+          te: "జెమ్మా అంతర్దృష్టి: మధురై జంక్షన్ నుండి చోళవందన్ ఫార్మ్‌స్టేకు జీరో-కార్బన్ ఎకో ట్రాన్సిట్ అందుబాటులో ఉంది.",
+          hi: "जेम्मा सतत अंतर्दृष्टि: मदुरै जंक्शन से शोलावनदान फ़ार्मस्टे तक शून्य-कार्बन इको ट्रांजिट उपलब्ध है।",
+          ml: "ജെമ്മ ഇൻസൈറ്റ്: മധുര ജംഗ്ഷനിൽ നിന്ന് ഫാംസ്റ്റേയിലേക്ക് സീറോ-കാർബൺ ഇക്കോ ട്രാൻസിറ്റ് ലഭ്യമാണ്.",
+          kn: "ಜೆಮ್ಮಾ ಒಳನೋಟ: ಮಧುರೈ ಜಂಕ್ಷನ್‌ನಿಂದ ಫಾರ್ಮ್‌ಸ್ಟೇಗೆ ಶೂನ್ಯ-ಕಾರ್ಬನ್ ಸಾರಿಗೆ ಲಭ್ಯವಿದೆ."
+        }
       }
     ]
   },
