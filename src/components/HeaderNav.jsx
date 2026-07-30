@@ -16,7 +16,7 @@ export function HeaderNav({
     { code: "ta", label: "தமிழ் (TA)" },
     { code: "te", label: "తెలుగు (TE)" },
     { code: "hi", label: "हिंदी (HI)" },
-    { code: "ml", label: "மலയാളம் (ML)" },
+    { code: "ml", label: "മലയാളം (ML)" },
     { code: "kn", label: "ಕನ್ನಡ (KN)" }
   ];
 
