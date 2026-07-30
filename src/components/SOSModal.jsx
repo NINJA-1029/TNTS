@@ -19,7 +19,7 @@ import {
 import { EMERGENCY_NUMBERS } from "../data/heritageData";
 import { getEmergencyContacts, saveEmergencyContacts } from "../services/offlineStorage";
 
-export function SOSModal({ isOpen, onClose }) {
+export function SOSModal({ isOpen, onClose, language = "en" }) {
   const [contacts, setContacts] = useState([]);
   const [newContactName, setNewContactName] = useState("");
   const [newContactPhone, setNewContactPhone] = useState("");

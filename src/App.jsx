@@ -3,11 +3,10 @@ import { HeaderNav } from "./components/HeaderNav";
 import { KolamBorders } from "./components/KolamBorders";
 import { TravelArcPlanner } from "./components/TravelArcPlanner";
 import { ExploreCategories } from "./components/ExploreCategories";
-import { ARExplorerCard, ARExplorerModal } from "./components/ARExplorerModal";
 import { OfflineMapView } from "./components/OfflineMapView";
 import { CrowdAnalyzer } from "./components/CrowdAnalyzer";
 import { SOSModal } from "./components/SOSModal";
-import { AlertTriangle, ShieldCheck, Cpu, HeartHandshake, Compass, Sparkles, MapPin, Camera, Users } from "lucide-react";
+import { AlertTriangle, ShieldCheck, Cpu, HeartHandshake, Compass, Sparkles, MapPin, Users } from "lucide-react";
 import { getSavedItinerary } from "./services/offlineStorage";
 import { t } from "./data/i18n";
 import "./App.css";
@@ -17,15 +16,13 @@ export default function App() {
   const [language, setLanguage] = useState("en");
   const [isOffline, setIsOffline] = useState(true); // Default to offline-first mode
   const [isSosOpen, setIsSosOpen] = useState(false);
-  const [isArOpen, setIsArOpen] = useState(false);
   const [generatedItinerary, setGeneratedItinerary] = useState(() => getSavedItinerary());
 
-  // Keyboard shortcut: Press Escape to close modals or 'S' for SOS
+  // Keyboard shortcut: Press Escape to close modal
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
         setIsSosOpen(false);
-        setIsArOpen(false);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
@@ -69,7 +66,6 @@ export default function App() {
         {/* Tab 2: Explore */}
         {activeTab === "explore" && (
           <div className="view-pane fade-in">
-            <ARExplorerCard onLaunchAR={() => setIsArOpen(true)} language={language} />
             <ExploreCategories language={language} />
           </div>
         )}
@@ -112,7 +108,6 @@ export default function App() {
               <li><button onClick={() => setActiveTab("explore")}><Compass size={14} className="footer-link-icon" /> {t("footer.heritageExplorer", language)}</button></li>
               <li><button onClick={() => setActiveTab("map")}><MapPin size={14} className="footer-link-icon" /> {t("footer.offlineMap", language)}</button></li>
               <li><button onClick={() => setActiveTab("crowd")}><Users size={14} className="footer-link-icon" /> {t("nav.crowdAnalyzer", language)}</button></li>
-              <li><button onClick={() => setIsArOpen(true)}><Camera size={14} className="footer-link-icon" /> {t("footer.arCamera", language)}</button></li>
             </ul>
           </div>
 
@@ -150,10 +145,7 @@ export default function App() {
       </button>
 
       {/* SOS Emergency Dashboard Modal */}
-      <SOSModal isOpen={isSosOpen} onClose={() => setIsSosOpen(false)} />
-
-      {/* AR Explorer Live HUD Modal */}
-      <ARExplorerModal isOpen={isArOpen} onClose={() => setIsArOpen(false)} language={language} />
+      <SOSModal isOpen={isSosOpen} onClose={() => setIsSosOpen(false)} language={language} />
     </div>
   );
 }
