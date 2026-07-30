@@ -20,10 +20,10 @@ export const DISTRICTS = [
       ta: "தெற்கு மண்டலம்",
       te: "దక్షిణ మండలం",
       hi: "दक्षिण क्षेत्र",
-      ml: "തെക്കൻ മേഖല",
+      ml: "தெக்கன் മേഖല",
       kn: "ದಕ್ಷಿಣ ವಲಯ"
     },
-    image: "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=800&q=80",
+    image: "/photos/meenakshi amman temple.jpeg",
     description: "The Cultural Capital of Tamil Nadu, famous for Meenakshi Amman Temple, Sungudi Sarees, Jigarthanda & Bun Parotta.",
     tamilDescription: "தமிழ்நாட்டின் பண்பாட்டுத் தலைநகரம், மீனாட்சி அம்மன் கோயில், ஜிகர்தண்டா மற்றும் சுவையான உணவு மையம்.",
     safetyRating: "9.8 / 10 (Safe for Women)",
@@ -81,7 +81,7 @@ export const DISTRICTS = [
       ml: "തെക്ക്-കിഴക്കൻ മേഖല",
       kn: "ಆಗ್ನೇಯ ವಲಯ"
     },
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    image: "/pics/1.jpeg",
     description: "Land of grand 100-room mansions, Athangudi handmade tiles, Athangudi crafts, and world-renowned Pepper Spiced Cuisine.",
     tamilDescription: "செட்டிநாட்டு அரண்மனைகள், ஆத்தங்குடி ஓடுகள் மற்றும் செட்டிநாட்டு மிளகு சமையல் மையம்.",
     safetyRating: "9.7 / 10 (Peaceful Rural Hub)",
@@ -110,7 +110,7 @@ export const DISTRICTS = [
       ml: "പശ്ചിമഘട്ട മേഖല",
       kn: "ಪಶ್ಚಿಮ ಘಟ್ಟಗಳ ವಲಯ"
     },
-    image: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80",
+    image: "/pics/16.jpeg",
     description: "Queen of Hill Stations, organic tea gardens, Toda tribal settlements, mountain steam train, and homemade chocolates.",
     tamilDescription: "நீலகிரி மலைத் தேயிலைத் தோட்டங்கள், தோடர் பழங்குடியினர் மற்றும் கைவினை சாக்லேட் மையம்.",
     safetyRating: "9.6 / 10 (Eco-Protected Region)",
@@ -139,7 +139,7 @@ export const DISTRICTS = [
       ml: "തെക്കൻ അഗ്രം മേഖല",
       kn: "ದಕ್ಷಿಣ ತುದಿಯ ವಲಯ"
     },
-    image: "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=800&q=80",
+    image: "/pics/31.jpeg",
     description: "Confluence of three oceans, Thiruvalluvar Statue, Padmanabhapuram Wooden Palace, and coastal Nanjil cuisine.",
     tamilDescription: "முக்கடல் சங்கமிக்கும் இடம், 133 அடி திருவள்ளுவர் சிலை மற்றும் பத்மநாபபுரம் மர அரண்மனை.",
     safetyRating: "9.8 / 10 (Tourist Friendly)",
@@ -168,7 +168,7 @@ export const DISTRICTS = [
       ml: "കോറോമാണ്ടൽ തീരം",
       kn: "ಕೋರಮಂಡಲ ಕರಾವಳಿ"
     },
-    image: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80",
+    image: "/pics/46.jpeg",
     description: "7th-century Pallava cave temples, Shore Temple (UNESCO), Arjuna's Penance, and fresh coastal seafood.",
     tamilDescription: "பல்லவர் கால குடைவரை கோயில்கள், கடற்கரை கோயில் மற்றும் சோழ சிற்பக் கலை மையம்.",
     safetyRating: "9.7 / 10 (Global Heritage Hub)",
@@ -240,30 +240,30 @@ export const EMERGENCY_NUMBERS = [
 
 // Curated verified authentic stock photo URLs for South Indian Heritage & Culture
 const IMGS = {
-  meenakshi: "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=800&q=80",
+  meenakshi: "/photos/meenakshi amman temple.jpeg",
   bigTemple: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
-  shoreTemple: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80",
-  stoneTemple: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-  statue: "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=800&q=80",
-  mansion: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-  gopuramCarvings: "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=800&q=80",
-  pillarHall: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-  palaceStucco: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+  shoreTemple: "/pics/46.jpeg",
+  stoneTemple: "/pics/47.jpeg",
+  statue: "/pics/31.jpeg",
+  mansion: "/pics/1.jpeg",
+  gopuramCarvings: "/photos/meenakshi amman temple.jpeg",
+  pillarHall: "/pics/5.jpeg",
+  palaceStucco: "/photos/nayakar mahal.jpeg",
   sacredTank: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
-  caveTemple: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80",
+  caveTemple: "/pics/3.jpeg",
   foodDosa: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
   foodCoffee: "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=800&q=80",
   foodBiryani: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
-  foodCurry: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+  foodCurry: "/pics/13.jpeg",
   foodDrink: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
   farmPaddy: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
   farmCoconut: "https://images.unsplash.com/photo-1592417817098-8f3d6eb231fc?auto=format&fit=crop&w=800&q=80",
   farmHarvest: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80",
-  farmPottery: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=80",
-  ecoTea: "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80",
-  ecoWaterfall: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
-  ecoCoast: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-  ecoForest: "https://images.unsplash.com/photo-1511497584788-876761465587?auto=format&fit=crop&w=800&q=80"
+  farmPottery: "/pics/7.jpeg",
+  ecoTea: "/pics/24.jpeg",
+  ecoWaterfall: "/pics/21.jpeg",
+  ecoCoast: "/pics/40.jpeg",
+  ecoForest: "/pics/23.jpeg"
 };
 
 // EXACT 15 SIGNATURE EXPERIENCES PER DISTRICT (90 ITEMS TOTAL ACROSS 6 DISTRICTS)
@@ -284,7 +284,7 @@ export const EXPERIENCES = [
     rating: 4.98, 
     description: "Iconic 45-acre Dravidian temple complex with 14 soaring Gopurams and Golden Lotus Tank.",
     tamilDescription: "14 கோபுரங்கள் மற்றும் பொற்றாமரைக் குளத்துடன் கூடிய புகழ்பெற்ற திராவிடக் கோயில் வளாகம்.",
-    image: IMGS.meenakshi, 
+    image: "/photos/meenakshi amman temple.jpeg", 
     safeForWomen: true, 
     offlineMapData: { lat: 9.9195, lng: 78.1193 } 
   },
@@ -301,7 +301,7 @@ export const EXPERIENCES = [
     rating: 4.89, 
     description: "17th-century royal palace built by King Thirumalai Nayak with 82-foot white stucco pillars.", 
     tamilDescription: "82 அடி உயர வெள்ளை நிற தூண்களுடன் 17 ஆம் நூற்றாண்டில் கட்டப்பட்ட நாயக்கர் அரண்மனை.",
-    image: IMGS.palaceStucco, 
+    image: "/photos/nayakar mahal.jpeg", 
     safeForWomen: true, 
     offlineMapData: { lat: 9.9140, lng: 78.1240 } 
   },
@@ -318,7 +318,7 @@ export const EXPERIENCES = [
     rating: 4.90, 
     description: "Historic Rani Mangammal palace preserving Mahatma Gandhi's original blood-stained garment.", 
     tamilDescription: "காந்தியடிகளின் இரத்தக் கறை படிந்த ஆடையைப் பாதுகாக்கும் வரலாற்றுச் சிறப்புமிக்க அருங்காட்சியகம்.",
-    image: IMGS.mansion, 
+    image: "/photos/mahatma gandhi memorial.jpeg", 
     safeForWomen: true, 
     offlineMapData: { lat: 9.9310, lng: 78.1360 } 
   },
@@ -335,7 +335,7 @@ export const EXPERIENCES = [
     rating: 4.94, 
     description: "Ancient Lord Vishnu temple situated at the foot of Alagar Hills famous for Chithirai festival.", 
     tamilDescription: "சித்திரைத் திருவிழாவிற்குப் புகழ்பெற்ற அழகர் மலை அடிவாரத்தில் அமைந்துள்ள பெருமாள் கோயில்.",
-    image: IMGS.gopuramCarvings, 
+    image: "/photos/Azhagar temple.jpeg", 
     safeForWomen: true, 
     offlineMapData: { lat: 10.0754, lng: 78.2144 } 
   },
@@ -573,439 +573,439 @@ export const EXPERIENCES = [
   },
 
   // ==========================================
-  // SIVAGANGA (CHETTINAD) DISTRICT (15 PLACES)
+  // SIVAGANGA (CHETTINAD) DISTRICT (15 PLACES -> /pics/1.jpeg to /pics/15.jpeg)
   // ==========================================
   { 
     id: "cht-1", title: "Chettinad Palace (Kanadukathan)", tamilTitle: "செட்டிநாடு அரண்மனை (கானாடுகாத்தான்)",
     category: "heritage", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Kanadukathan, Karaikudi", duration: "3 Hours", price: "₹350", rating: 4.95, 
     description: "110-room palatial mansion built in 1912 with Italian marble, Burmese teak, and Belgian mirrors.", 
     tamilDescription: "இத்தாலி மார்பிள் மற்றும் பர்மா தேக்குகளால் 1912 இல் கட்டப்பட்ட 110 அறைகள் கொண்ட அரண்மனை.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 10.0760, lng: 78.7844 } 
+    image: "/pics/1.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0760, lng: 78.7844 } 
   },
   { 
     id: "cht-2", title: "Athangudi Palace", tamilTitle: "ஆத்தங்குடி அரண்மனை",
     category: "heritage", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Athangudi, Karaikudi", duration: "2 Hours", price: "₹150", rating: 4.91, 
     description: "Magnificent heritage residence famous for its vibrant handmade floor tile court rooms.", 
     tamilDescription: "வண்ணமயமான ஆத்தங்குடி கைவினை ஓடுகள் பதிக்கப்பட்ட பாரம்பரிய அரண்மனை தளம்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 10.1200, lng: 78.8300 } 
+    image: "/pics/2.jpeg", safeForWomen: true, offlineMapData: { lat: 10.1200, lng: 78.8300 } 
   },
   { 
     id: "cht-3", title: "Pillayarpatti Karpaga Vinayagar Temple", tamilTitle: "பிள்ளையார்பட்டி கற்பக விநாயகர் கோயில்",
     category: "heritage", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Pillayarpatti, Karaikudi", duration: "2.5 Hours", price: "Free Entry", rating: 4.96, 
     description: "1,600-year-old rock-cut cave temple housing a 6-foot rock carved Lord Ganesha idol.", 
     tamilDescription: "1,600 ஆண்டுகள் பழமையான மலையைக் குடைந்து அமைக்கப்பட்ட கற்பக விநாயகர் ஆலயம்.",
-    image: IMGS.caveTemple, safeForWomen: true, offlineMapData: { lat: 10.1250, lng: 78.6750 } 
+    image: "/pics/3.jpeg", safeForWomen: true, offlineMapData: { lat: 10.1250, lng: 78.6750 } 
   },
   { 
     id: "cht-4", title: "Kundrakudi Murugan Temple", tamilTitle: "குன்றக்குடி முருகன் கோயில்",
     category: "heritage", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Kundrakudi, Karaikudi", duration: "2 Hours", price: "Free Entry", rating: 4.90, 
     description: "Hilltop cave shrine dedicated to Lord Murugan perched atop a scenic granite rock outcrop.", 
     tamilDescription: "மலைமேல் அமைந்துள்ள பழமையான குடைவரை முருகன் திருக்கோயில்.",
-    image: IMGS.caveTemple, safeForWomen: true, offlineMapData: { lat: 10.1100, lng: 78.7200 } 
+    image: "/pics/4.jpeg", safeForWomen: true, offlineMapData: { lat: 10.1100, lng: 78.7200 } 
   },
   { 
     id: "cht-5", title: "Karaikudi Heritage Walk", tamilTitle: "காரைக்குடி பாரம்பரிய நடைபயணம்",
     category: "heritage", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Karaikudi Town", duration: "2.5 Hours", price: "Free Entry", rating: 4.88, 
     description: "Guided walking tour through wide grid streets lined with 19th-century grand merchant mansions.", 
     tamilDescription: "19 ஆம் நூற்றாண்டின் நகரத்தார் வீடுகள் நிறைந்த தெருக்களில் பாரம்பரிய நடைபயணம்.",
-    image: IMGS.pillarHall, safeForWomen: true, offlineMapData: { lat: 10.0700, lng: 78.7800 } 
+    image: "/pics/5.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0700, lng: 78.7800 } 
   },
   { 
     id: "cht-6", title: "Chettinad Museum", tamilTitle: "செட்டிநாடு அருங்காட்சியகம்",
     category: "heritage", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Kanadukathan, Karaikudi", duration: "1.5 Hours", price: "₹50", rating: 4.86, 
     description: "Heritage museum displaying Chettiar palm-leaf ledgers, enamelware, brass lamps, and marriage baskets.", 
     tamilDescription: "நகரத்தார் பாரம்பரியப் பொருட்கள் மற்றும் பித்தளை விளக்குகள் உள்ள அருங்காட்சியகம்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 10.0765, lng: 78.7845 } 
+    image: "/pics/6.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0765, lng: 78.7845 } 
   },
   { 
     id: "cht-7", title: "Athangudi Tile Factory", tamilTitle: "ஆத்தங்குடி ஓடு தொழிற்சாலை",
     category: "agri", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Athangudi Village", duration: "2 Hours", price: "Free Entry", rating: 4.95, 
     description: "Traditional workshop crafting eco-friendly handmade cement tiles using glass molds and oxide colors.", 
     tamilDescription: "கையால் செய்யப்படும் புகழ்பெற்ற ஆத்தங்குடி பூவேலை ஓடுகள் தயாரிக்கும் பட்டறை.",
-    image: IMGS.farmPottery, safeForWomen: true, offlineMapData: { lat: 10.1210, lng: 78.8310 } 
+    image: "/pics/7.jpeg", safeForWomen: true, offlineMapData: { lat: 10.1210, lng: 78.8310 } 
   },
   { 
     id: "cht-8", title: "Athangudi Village", tamilTitle: "ஆத்தங்குடி கிராமம்",
     category: "agri", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Athangudi, Karaikudi", duration: "3 Hours", price: "Free Entry", rating: 4.93, 
     description: "Artisan village famous worldwide for handmade decorative floor tiles and rural crafts.", 
     tamilDescription: "கைவினை ஓடுகள் மற்றும் பாரம்பரியக் கிராமக் கலைகளுக்குப் புகழ்பெற்ற கிராமம்.",
-    image: IMGS.farmPottery, safeForWomen: true, offlineMapData: { lat: 10.1205, lng: 78.8305 } 
+    image: "/pics/8.jpeg", safeForWomen: true, offlineMapData: { lat: 10.1205, lng: 78.8305 } 
   },
   { 
     id: "cht-9", title: "Karaikudi Antique Market", tamilTitle: "காரைக்குடி பழம்பொருள் சந்தை",
     category: "agri", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Jewellers Street, Karaikudi", duration: "2 Hours", price: "Free Entry", rating: 4.90, 
     description: "Bustling market selling vintage Swedish enamelware, Belgian crystal, teak pillars, and brassware.", 
     tamilDescription: "பழைய தேக்கு மரப் பொருட்கள் மற்றும் பித்தளைப் பாத்திரங்கள் விற்கப்படும் சந்தை.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 10.0720, lng: 78.7810 } 
+    image: "/pics/9.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0720, lng: 78.7810 } 
   },
   { 
     id: "cht-10", title: "Chettinad Cotton Saree Shops", tamilTitle: "செட்டிநாடு கண்டாங்கி சேலை கடைகள்",
     category: "agri", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Karaikudi Bazaar", duration: "1.5 Hours", price: "Free Entry", rating: 4.89, 
     description: "Handloom weaver outlets selling lightweight breathable Kandangi cotton sarees.", 
     tamilDescription: "கைத்தறியால் நெய்யப்படும் பாரம்பரிய செட்டிநாடு கண்டாங்கி பருத்தி சேலைக் கடைகள்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 10.0710, lng: 78.7800 } 
+    image: "/pics/10.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0710, lng: 78.7800 } 
   },
   { 
     id: "cht-11", title: "Chettinad Mansion Stays", tamilTitle: "செட்டிநாடு பண்ணை அரண்மனை தங்கல்கள்",
     category: "agri", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Kanadukathan & Pallathur", duration: "Full Day / Night", price: "₹3,500", rating: 4.94, 
     description: "Heritage farmstay experiences in restored 19th-century Chettiar mansions with courtyards.", 
     tamilDescription: "19 ஆம் நூற்றாண்டு பாரம்பரிய நகரத்தார் அரண்மனைகளில் தங்கும் அனுபவம்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 10.0760, lng: 78.7840 } 
+    image: "/pics/11.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0760, lng: 78.7840 } 
   },
   { 
     id: "cht-12", title: "The Bangala", tamilTitle: "தி பங்களா உணவகம்",
     category: "food", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Devakottai Road, Karaikudi", duration: "2 Hours", price: "₹850", rating: 4.98, 
     description: "World-renowned culinary destination serving multi-course traditional Chettinad banquets.", 
     tamilDescription: "உலகப் புகழ்பெற்ற பாரம்பரிய செட்டிநாட்டு வாழை இலை விருந்து உணவகம்.",
-    image: IMGS.foodCurry, safeForWomen: true, offlineMapData: { lat: 10.0650, lng: 78.7850 } 
+    image: "/pics/12.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0650, lng: 78.7850 } 
   },
   { 
     id: "cht-13", title: "Chettinad Cuisine & Pepper Chicken Restaurants", tamilTitle: "செட்டிநாடு மிளகு கோழி சமையல்",
     category: "food", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Karaikudi Town", duration: "1.5 Hours", price: "₹450", rating: 4.95, 
     description: "Banana leaf dining serving authentic pepper chicken, sea crab masala, and vellai paniyaram.", 
     tamilDescription: "செட்டிநாட்டு காரசாரமான மிளகு கோழி வறுவல் மற்றும் வெள்ளை பணியாரம்.",
-    image: IMGS.foodCurry, safeForWomen: true, offlineMapData: { lat: 10.0705, lng: 78.7805 } 
+    image: "/pics/13.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0705, lng: 78.7805 } 
   },
   { 
     id: "cht-14", title: "Local Spice Markets", tamilTitle: "காரைக்குடி மசாலா நறுமண சந்தை",
     category: "food", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Karaikudi Bazaar", duration: "1 Hour", price: "Free Entry", rating: 4.89, 
     description: "Bustling spice market selling raw Chettinad masala blends, sun-dried vathal, and star anise.", 
     tamilDescription: "பாரம்பரிய முறையில் அரைக்கப்படும் செட்டிநாட்டு மசாலாப் பொடிகள் மற்றும் வத்தல்கள்.",
-    image: IMGS.foodCoffee, safeForWomen: true, offlineMapData: { lat: 10.0715, lng: 78.7805 } 
+    image: "/pics/14.jpeg", safeForWomen: true, offlineMapData: { lat: 10.0715, lng: 78.7805 } 
   },
   { 
     id: "cht-15", title: "Vettangudi Bird Sanctuary", tamilTitle: "வேட்டங்குடி பறவைகள் சரணாலயம்",
     category: "eco", districtId: "chettinad", districtName: "Sivagangai (Chettinad) District", location: "Vettangudi, Tirupathur", duration: "2.5 Hours", price: "₹25", rating: 4.87, 
     description: "Protected wetland sanctuary hosting migratory open-billed storks, egrets, and herons.", 
     tamilDescription: "வெளிநாட்டுப் பறவைகள் வலசை வரும் வேட்டங்குடி பாதுகாக்கப்பட்ட ஈரநிலப் பகுதி.",
-    image: IMGS.ecoForest, safeForWomen: true, offlineMapData: { lat: 10.1100, lng: 78.5200 } 
+    image: "/pics/15.jpeg", safeForWomen: true, offlineMapData: { lat: 10.1100, lng: 78.5200 } 
   },
 
   // ==========================================
-  // NILGIRIS (OOTY) DISTRICT (15 PLACES)
+  // NILGIRIS (OOTY) DISTRICT (15 PLACES -> /pics/16.jpeg to /pics/30.jpeg)
   // ==========================================
   { 
     id: "oty-1", title: "Ooty Botanical Garden", tamilTitle: "ஊட்டி தாவரவியல் பூங்கா",
     category: "eco", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Vannarappet, Ooty", duration: "3 Hours", price: "₹50", rating: 4.95, 
     description: "55-acre terraced garden established in 1848 featuring 1,000 exotic plant species.", 
     tamilDescription: "1848 இல் அமைக்கப்பட்ட 55 ஏக்கர் பரப்பளவிலான பிரமாண்ட தாவரவியல் பூங்கா.",
-    image: IMGS.ecoTea, safeForWomen: true, offlineMapData: { lat: 11.4160, lng: 76.7120 } 
+    image: "/pics/16.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4160, lng: 76.7120 } 
   },
   { 
     id: "oty-2", title: "Ooty Lake", tamilTitle: "ஊட்டி ஏரி",
     category: "eco", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "West Ooty", duration: "2.5 Hours", price: "₹30", rating: 4.90, 
     description: "65-acre artificial lake constructed in 1824 offering paddle boating framed by eucalyptus trees.", 
     tamilDescription: "யூக்கலிப்டஸ் மரங்கள் சூழ படகு சவாரி செய்ய ஏற்ற 65 ஏக்கர் இயற்கை ஏரி.",
-    image: IMGS.ecoWaterfall, safeForWomen: true, offlineMapData: { lat: 11.4060, lng: 76.6870 } 
+    image: "/pics/17.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4060, lng: 76.6870 } 
   },
   { 
     id: "oty-3", title: "Doddabetta Peak", tamilTitle: "தொட்டபெட்டா சிகரம்",
     category: "eco", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Ooty-Kotagiri Road", duration: "2.5 Hours", price: "₹20", rating: 4.96, 
     description: "Highest mountain peak in the Nilgiri Hills (2,637 meters) with telescope views.", 
     tamilDescription: "நீலகிரி மலையின் மிக உயர்ந்த சிகரம் (2,637 மீட்டர்) மற்றும் தொலைநோக்கி பார்வை மையம்.",
-    image: IMGS.ecoTea, safeForWomen: true, offlineMapData: { lat: 11.4010, lng: 76.7360 } 
+    image: "/pics/18.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4010, lng: 76.7360 } 
   },
   { 
     id: "oty-4", title: "Avalanche Lake", tamilTitle: "அவலான்ச் ஏரி",
     category: "eco", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Avalanche Sanctuary", duration: "4 Hours", price: "₹200", rating: 4.97, 
     description: "Pristine high-altitude lake surrounded by shola forests and blooming rhododendrons.", 
     tamilDescription: "சோலைக்காடுகள் சூழ அமைதியான சூழலில் அமைந்துள்ள மலை உச்சி ஏரி.",
-    image: IMGS.ecoWaterfall, safeForWomen: true, offlineMapData: { lat: 11.2900, lng: 76.5900 } 
+    image: "/pics/19.jpeg", safeForWomen: true, offlineMapData: { lat: 11.2900, lng: 76.5900 } 
   },
   { 
     id: "oty-5", title: "Emerald Lake", tamilTitle: "எமரால்டு ஏரி",
     category: "eco", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Emerald Village", duration: "2.5 Hours", price: "Free Entry", rating: 4.93, 
     description: "Serene emerald-green water reservoir nestled in the Silent Valley region of Nilgiris.", 
     tamilDescription: "நீலகிரியின் அமைதி பள்ளத்தாக்கில் அமைந்த பச்சை நிற நீர் தேக்கம்.",
-    image: IMGS.ecoCoast, safeForWomen: true, offlineMapData: { lat: 11.3200, lng: 76.6100 } 
+    image: "/pics/20.jpeg", safeForWomen: true, offlineMapData: { lat: 11.3200, lng: 76.6100 } 
   },
   { 
     id: "oty-6", title: "Pykara Lake & Falls", tamilTitle: "பைக்காரா ஏரி & நீர்வீழ்ச்சி",
     category: "eco", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Pykara, Ooty", duration: "3 Hours", price: "₹100", rating: 4.92, 
     description: "Unspoiled high-mountain lake cascades surrounded by protected Toda tribal lands.", 
     tamilDescription: "தோடர் பழங்குடியினர் நிலப்பரப்பில் பாயும் அழகான மலை நீர்வீழ்ச்சி.",
-    image: IMGS.ecoWaterfall, safeForWomen: true, offlineMapData: { lat: 11.4500, lng: 76.5900 } 
+    image: "/pics/21.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4500, lng: 76.5900 } 
   },
   { 
     id: "oty-7", title: "Government Rose Garden", tamilTitle: "அரசு ரோஜா பூங்கா",
     category: "eco", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Elk Hill, Ooty", duration: "2 Hours", price: "₹40", rating: 4.94, 
     description: "India's largest rose garden sprawling over 4 hectares with over 20,000 rose varieties.", 
     tamilDescription: "20,000 க்கும் மேற்பட்ட ரோஜா வகைகளைக் கொண்ட இந்தியாவின் மிகப்பெரிய ரோஜா தோட்டம்.",
-    image: IMGS.ecoTea, safeForWomen: true, offlineMapData: { lat: 11.4080, lng: 76.7150 } 
+    image: "/pics/22.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4080, lng: 76.7150 } 
   },
   { 
     id: "oty-8", title: "Mudumalai Tiger Reserve", tamilTitle: "முதுமலை புலிகள் காப்பகம்",
     category: "eco", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Mudumalai", duration: "4 Hours", price: "₹350", rating: 4.97, 
     description: "Declared tiger reserve and wildlife sanctuary harboring Bengal tigers and Asian elephants.", 
     tamilDescription: "புலிகள் மற்றும் யானைகள் வாழும் பாதுகாக்கப்பட்ட முதுமலை வனவிலங்கு காப்பகம்.",
-    image: IMGS.ecoForest, safeForWomen: true, offlineMapData: { lat: 11.5600, lng: 76.5300 } 
+    image: "/pics/23.jpeg", safeForWomen: true, offlineMapData: { lat: 11.5600, lng: 76.5300 } 
   },
   { 
     id: "oty-9", title: "Coonoor Tea Gardens", tamilTitle: "குன்னூர் தேயிலைத் தோட்டம்",
     category: "agri", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Coonoor Estates", duration: "3 Hours", price: "₹400", rating: 4.96, 
     description: "High-altitude organic tea garden trail with artisanal leaf plucking and factory tasting.", 
     tamilDescription: "பசுமையான மலைத் தேயிலைத் தோட்டங்களில் உலாவி தேயிலை தயாரிப்பை அறியும் பாதை.",
-    image: IMGS.ecoTea, safeForWomen: true, offlineMapData: { lat: 11.3500, lng: 76.7900 } 
+    image: "/pics/24.jpeg", safeForWomen: true, offlineMapData: { lat: 11.3500, lng: 76.7900 } 
   },
   { 
     id: "oty-10", title: "Tea Museum", tamilTitle: "தேயிலை அருங்காட்சியகம்",
     category: "agri", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Dodabetta Road, Ooty", duration: "1.5 Hours", price: "₹25", rating: 4.90, 
     description: "Demonstrates CTC and orthodox tea processing methods alongside fresh Nilgiri tea tasting.", 
     tamilDescription: "தேயிலை அரைக்கும் முறைகளை விளக்கி புதிய நீலகிரி தேநீர் வழங்கும் அருங்காட்சியகம்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 11.4050, lng: 76.7300 } 
+    image: "/pics/25.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4050, lng: 76.7300 } 
   },
   { 
     id: "oty-11", title: "Toda Village", tamilTitle: "தோடர் பழங்குடியினர் கிராமம்",
     category: "agri", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Muthorai Palada, Ooty", duration: "2 Hours", price: "Free Entry", rating: 4.92, 
     description: "Indigenous Toda tribal settlement featuring barrel-vaulted bamboo huts and red-and-black embroidery.", 
     tamilDescription: "பாரம்பரிய மூங்கில் குடில்கள் கொண்ட தோடர் பழங்குடியின மக்களின் வாழ்விடம்.",
-    image: IMGS.farmPaddy, safeForWomen: true, offlineMapData: { lat: 11.3900, lng: 76.6700 } 
+    image: "/pics/26.jpeg", safeForWomen: true, offlineMapData: { lat: 11.3900, lng: 76.6700 } 
   },
   { 
     id: "oty-12", title: "Ooty Toy Train", tamilTitle: "ஊட்டி மலை ரயில் (பொம்மை ரயில்)",
     category: "heritage", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Ooty Railway Station", duration: "3.5 Hours", price: "₹200", rating: 4.98, 
     description: "UNESCO World Heritage mountain steam railway built in 1908 running between Mettupalayam and Ooty.", 
     tamilDescription: "1908 இல் அமைக்கப்பட்ட யுனெஸ்கோ உலகப் பாரம்பரிய நீலகிரி மலை நீராவியால் இயங்கும் ரயில்.",
-    image: IMGS.palaceStucco, safeForWomen: true, offlineMapData: { lat: 11.4060, lng: 76.6960 } 
+    image: "/pics/27.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4060, lng: 76.6960 } 
   },
   { 
     id: "oty-13", title: "Elk Hill Murugan Temple", tamilTitle: "எல்க் ஹில் முருகன் கோயில்",
     category: "heritage", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Elk Hill, Ooty", duration: "2 Hours", price: "Free Entry", rating: 4.89, 
     description: "Hilltop temple featuring a 40-foot golden statue of Lord Murugan overlooking Ooty town.", 
     tamilDescription: "ஊட்டி நகரத்தைப் பார்த்தவாறு அமைந்துள்ள 40 அடி உயர தங்க நிற முருகன் சிலை கோயில்.",
-    image: IMGS.gopuramCarvings, safeForWomen: true, offlineMapData: { lat: 11.4000, lng: 76.7100 } 
+    image: "/pics/28.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4000, lng: 76.7100 } 
   },
   { 
     id: "oty-14", title: "St. Stephen's Church", tamilTitle: "செயிண்ட் ஸ்டீபன் தேவாலயம்",
     category: "heritage", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Club Road, Ooty", duration: "1 Hour", price: "Free Entry", rating: 4.86, 
     description: "Built in 1829, one of the oldest churches in the Nilgiris featuring Tippu Sultan palace wooden beams.", 
     tamilDescription: "1829 இல் கட்டப்பட்ட நீலகிரியின் பழமையான மரக் உத்தரங்கள் கொண்ட தேவாலயம்.",
-    image: IMGS.stoneTemple, safeForWomen: true, offlineMapData: { lat: 11.4140, lng: 76.7040 } 
+    image: "/pics/29.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4140, lng: 76.7040 } 
   },
   { 
     id: "oty-15", title: "Homemade Chocolate Shops & Factory", tamilTitle: "ஊட்டி கைவினை சாக்லேட் கடைகள்",
     category: "food", districtId: "ooty", districtName: "Nilgiris (Ooty) District", location: "Charring Cross, Ooty", duration: "1 Hour", price: "₹150", rating: 4.95, 
     description: "Boutique shops selling fresh almond rochers, rum raisins, white chocolate, and truffles.", 
     tamilDescription: "சுவையான பாதாம் மற்றும் பழங்கள் கலந்த ஊட்டி ஹோம்மேட் சாக்லேட்கள்.",
-    image: IMGS.foodCoffee, safeForWomen: true, offlineMapData: { lat: 11.4100, lng: 76.7080 } 
+    image: "/pics/30.jpeg", safeForWomen: true, offlineMapData: { lat: 11.4100, lng: 76.7080 } 
   },
 
   // ==========================================
-  // KANYAKUMARI DISTRICT (15 PLACES)
+  // KANYAKUMARI DISTRICT (15 PLACES -> /pics/31.jpeg to /pics/45.jpeg)
   // ==========================================
   { 
     id: "kk-1", title: "Vivekananda Rock Memorial", tamilTitle: "விவேகானந்தர் பாறை நினைவு மண்டபம்",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Vavathurai Rock, Kanyakumari", duration: "3 Hours", price: "₹100", rating: 4.97, 
     description: "Monolithic sea rock memorial where Swami Vivekananda meditated in 1892, surrounded by 3 oceans.", 
     tamilDescription: "முக்கடல் சூழ 1892 இல் சுவாமி விவேகானந்தர் தியானம் செய்த கடலில் உள்ள பாறை மண்டபம்.",
-    image: IMGS.statue, safeForWomen: true, offlineMapData: { lat: 8.0780, lng: 77.5550 } 
+    image: "/pics/31.jpeg", safeForWomen: true, offlineMapData: { lat: 8.0780, lng: 77.5550 } 
   },
   { 
     id: "kk-2", title: "Thiruvalluvar Statue", tamilTitle: "திருவள்ளுவர் சிலை",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Sea Rock, Kanyakumari", duration: "2 Hours", price: "Included in Ferry", rating: 4.96, 
     description: "133-foot stone statue of Tamil saint poet Thiruvalluvar symbolizing 133 chapters of Thirukkural.", 
     tamilDescription: "133 அதிகாரங்களை உணர்த்தும் வகையில் கடலில் அமைக்கப்பட்ட 133 அடி திருவள்ளுவர் சிலை.",
-    image: IMGS.statue, safeForWomen: true, offlineMapData: { lat: 8.0775, lng: 77.5560 } 
+    image: "/pics/32.jpeg", safeForWomen: true, offlineMapData: { lat: 8.0775, lng: 77.5560 } 
   },
   { 
     id: "kk-3", title: "Bhagavathy Amman Temple", tamilTitle: "கன்னியாகுமரி பகவதி அம்மன் கோயில்",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Beach Road, Kanyakumari", duration: "2 Hours", price: "Free Entry", rating: 4.94, 
     description: "3,000-year-old sea shrine dedicated to Virgin Goddess Kanya Devi featuring a sparkling diamond nose ring.", 
     tamilDescription: "3,000 ஆண்டுகள் பழமையான முக்கடல் சங்கமக் கரையில் உள்ள வைர மூக்குத்தி அம்மன் கோயில்.",
-    image: IMGS.gopuramCarvings, safeForWomen: true, offlineMapData: { lat: 8.0760, lng: 77.5530 } 
+    image: "/pics/33.jpeg", safeForWomen: true, offlineMapData: { lat: 8.0760, lng: 77.5530 } 
   },
   { 
     id: "kk-4", title: "Gandhi Mandapam", tamilTitle: "காந்தி மண்டபம்",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Seashore, Kanyakumari", duration: "1.5 Hours", price: "Free Entry", rating: 4.88, 
     description: "Pink memorial building engineered so that on October 2nd, sun rays fall on the spot where Gandhi's ashes were kept.", 
     tamilDescription: "அக்டோபர் 2 அன்று சூரியக் கதிர்கள் சாம்பல் வைக்கப்பட்ட இடத்தில் விழும் வகையில் கட்டப்பட்ட மண்டபம்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 8.0790, lng: 77.5510 } 
+    image: "/pics/34.jpeg", safeForWomen: true, offlineMapData: { lat: 8.0790, lng: 77.5510 } 
   },
   { 
     id: "kk-5", title: "Vattakottai Fort", tamilTitle: "வட்டக்கோட்டை",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Vattakottai, Kanyakumari", duration: "2 Hours", price: "₹25", rating: 4.90, 
     description: "18th-century coastal granite fort constructed by Travancore commander Eustachius De Lannoy.", 
     tamilDescription: "18 ஆம் நூற்றாண்டில் கடற்கரையில் கருங்கற்களால் கட்டப்பட்ட வட்ட வடிவக் கோட்டை.",
-    image: IMGS.palaceStucco, safeForWomen: true, offlineMapData: { lat: 8.1250, lng: 77.5640 } 
+    image: "/pics/35.jpeg", safeForWomen: true, offlineMapData: { lat: 8.1250, lng: 77.5640 } 
   },
   { 
     id: "kk-6", title: "Padmanabhapuram Palace", tamilTitle: "பத்மநாபபுரம் மர அரண்மனை",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Thuckalay, Kanyakumari", duration: "3 Hours", price: "₹100", rating: 4.95, 
     description: "16th-century wooden palace featuring carved teak ceilings, polished black egg-white floors, and counsel halls.", 
     tamilDescription: "தேக்கு மரக் வேலைப்பாடுகள் மற்றும் கருப்பு நிறத் தளத்துடன் கூடிய 16 ஆம் நூற்றாண்டு மர அரண்மனை.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 8.2500, lng: 77.3200 } 
+    image: "/pics/36.jpeg", safeForWomen: true, offlineMapData: { lat: 8.2500, lng: 77.3200 } 
   },
   { 
     id: "kk-7", title: "Mathur Aqueduct", tamilTitle: "மாத்தூர் தொங்கு பாலம்",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Mathur, Kanyakumari", duration: "2 Hours", price: "₹10", rating: 4.91, 
     description: "One of the longest aqueducts in South India spanning 1,240 feet across Pahrali river valley.", 
     tamilDescription: "பஹ்ராளி ஆற்றின் குறுக்கே 1,240 அடி நீளத்தில் அமைந்துள்ள ஆசியாவின் மிகப்பெரிய தொங்கு கால்வாய் பாலம்.",
-    image: IMGS.ecoCoast, safeForWomen: true, offlineMapData: { lat: 8.3200, lng: 77.2900 } 
+    image: "/pics/37.jpeg", safeForWomen: true, offlineMapData: { lat: 8.3200, lng: 77.2900 } 
   },
   { 
     id: "kk-8", title: "Chitharal Jain Monuments", tamilTitle: "சிதறால் சமணர் மலைக் கோயில்",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Chitharal Hill, Kanyakumari", duration: "2.5 Hours", price: "Free Entry", rating: 4.89, 
     description: "9th-century rock-cut cave temple containing carved Jain Tirthankara relief figures on granite slopes.", 
     tamilDescription: "9 ஆம் நூற்றாண்டு கருங்கல் மலையில் செதுக்கப்பட்ட சமண தீர்த்தங்கரர் உருவங்கள்.",
-    image: IMGS.caveTemple, safeForWomen: true, offlineMapData: { lat: 8.3300, lng: 77.2400 } 
+    image: "/pics/38.jpeg", safeForWomen: true, offlineMapData: { lat: 8.3300, lng: 77.2400 } 
   },
   { 
     id: "kk-9", title: "Suchindram Thanumalayan Temple", tamilTitle: "சுசீந்திரம் தாணுமாலயன் கோயில்",
     category: "heritage", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Suchindram, Kanyakumari", duration: "2.5 Hours", price: "Free Entry", rating: 4.95, 
     description: "Famous temple uniting Brahma, Vishnu, and Shiva in a single lingam, with 22-foot Hanuman sculpture.", 
     tamilDescription: "மும்மூர்த்திகளும் ஒரே லிங்கத்தில் அருள் பாலிக்கும் 22 அடி அனுமன் சிலை கொண்ட கோயில்.",
-    image: IMGS.gopuramCarvings, safeForWomen: true, offlineMapData: { lat: 8.1560, lng: 77.4650 } 
+    image: "/pics/39.jpeg", safeForWomen: true, offlineMapData: { lat: 8.1560, lng: 77.4650 } 
   },
   { 
     id: "kk-10", title: "Kanyakumari Beach & Sunrise View Point", tamilTitle: "கன்னியாகுமரி கடற்கரை & சூரியோதய முனை",
     category: "eco", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "East Beach, Kanyakumari", duration: "2 Hours", price: "Free Entry", rating: 4.98, 
     description: "Multi-colored sand ocean beach where visitors watch the sun rise out of the Bay of Bengal.", 
     tamilDescription: "வங்காள விரிகுடாவில் சூரியன் உதிக்கும் வண்ண மணல் கொண்ட முக்கடல் கடற்கரை.",
-    image: IMGS.ecoCoast, safeForWomen: true, offlineMapData: { lat: 8.0780, lng: 77.5540 } 
+    image: "/pics/40.jpeg", safeForWomen: true, offlineMapData: { lat: 8.0780, lng: 77.5540 } 
   },
   { 
     id: "kk-11", title: "Sunset View Point", tamilTitle: "சூரிய அஸ்தமன முனை",
     category: "eco", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Hidden Twin Beach", duration: "1.5 Hours", price: "Free Entry", rating: 4.97, 
     description: "Renowned viewpoint where sun sets over Arabian Sea water horizon.", 
     tamilDescription: "அரபிக்கடலில் சூரியன் மறையும் காட்சியை ரசிக்கும் புகழ்பெற்ற பாறை முனை.",
-    image: IMGS.ecoCoast, safeForWomen: true, offlineMapData: { lat: 8.0820, lng: 77.5420 } 
+    image: "/pics/41.jpeg", safeForWomen: true, offlineMapData: { lat: 8.0820, lng: 77.5420 } 
   },
   { 
     id: "kk-12", title: "Thirparappu Falls", tamilTitle: "திற்பரப்பு நீர்வீழ்ச்சி",
     category: "eco", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Thirparappu, Kanyakumari", duration: "3 Hours", price: "₹25", rating: 4.91, 
     description: "50-foot natural waterfall cascades over a rocky bed on the Kodayar river.", 
     tamilDescription: "கோதையாற்றில் 50 அடி உயரத்தில் இருந்து விழும் இயற்கை அருவி.",
-    image: IMGS.ecoWaterfall, safeForWomen: true, offlineMapData: { lat: 8.3800, lng: 77.2600 } 
+    image: "/pics/42.jpeg", safeForWomen: true, offlineMapData: { lat: 8.3800, lng: 77.2600 } 
   },
   { 
     id: "kk-13", title: "Muttom Beach", tamilTitle: "முட்டம் கடற்கரை",
     category: "eco", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Muttom, Kanyakumari", duration: "2 Hours", price: "Free Entry", rating: 4.88, 
     description: "Scenic cliffside fishing village beach with a colonial lighthouse and rock formations.", 
     tamilDescription: "பழமையான கலங்கரை விளக்கம் மற்றும் பாறை வடிவங்கள் கொண்ட அழகிய பாறை கடற்கரை.",
-    image: IMGS.ecoCoast, safeForWomen: true, offlineMapData: { lat: 8.1200, lng: 77.3100 } 
+    image: "/pics/43.jpeg", safeForWomen: true, offlineMapData: { lat: 8.1200, lng: 77.3100 } 
   },
   { 
     id: "kk-14", title: "Kanyakumari Fish Market", tamilTitle: "கன்னியாகுமரி கடல் மீன் சந்தை",
     category: "food", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Harbor Road, Kanyakumari", duration: "1 Hour", price: "Free Entry", rating: 4.84, 
     description: "Bustling coastal market trading fresh sea fish, seer fish fry, and crab catches daily.", 
     tamilDescription: "புதிய வஞ்சிர மீன் வறுவல் மற்றும் நண்டு உணவுகள் விற்கப்படும் மீன் சந்தை.",
-    image: IMGS.foodCurry, safeForWomen: true, offlineMapData: { lat: 8.0800, lng: 77.5500 } 
+    image: "/pics/44.jpeg", safeForWomen: true, offlineMapData: { lat: 8.0800, lng: 77.5500 } 
   },
   { 
     id: "kk-15", title: "Hotel Saravana (Local Meals)", tamilTitle: "ஹோட்டல் சரவணா (நாஞ்சில் சாப்பாடு)",
     category: "food", districtId: "kanyakumari", districtName: "Kanyakumari District", location: "Main Road, Kanyakumari", duration: "1 Hour", price: "₹180", rating: 4.88, 
     description: "Popular local meal spot serving South Indian vegetarian banana leaf thali and Nanjil fish curry.", 
     tamilDescription: "பாரம்பரிய நாஞ்சில் நாடு மீன் குழம்பு மற்றும் வாழை இலை சைவ உணவகம்.",
-    image: IMGS.foodDosa, safeForWomen: true, offlineMapData: { lat: 8.0820, lng: 77.5490 } 
+    image: "/pics/45.jpeg", safeForWomen: true, offlineMapData: { lat: 8.0820, lng: 77.5490 } 
   },
 
   // ==========================================
-  // CHENGALPATTU (MAMALLAPURAM) DISTRICT (15 PLACES)
+  // CHENGALPATTU (MAMALLAPURAM) DISTRICT (15 PLACES -> /pics/46.jpeg to /pics/60.jpeg)
   // ==========================================
   { 
     id: "mml-1", title: "Shore Temple", tamilTitle: "மாமல்லபுரம் கடற்கரைக் கோயில்",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "ECR Beach, Mamallapuram", duration: "3 Hours", price: "₹400", rating: 4.95, 
     description: "7th-century structural stone UNESCO temple facing Bengal sea waves, built by Pallava King Rajasimha.", 
     tamilDescription: "வங்காள விரிகுடாக் கடலை நோக்கி 7 ஆம் நூற்றாண்டில் பல்லவர்களால் கட்டப்பட்ட யுனெஸ்கோ கல் கோயில்.",
-    image: IMGS.shoreTemple, safeForWomen: true, offlineMapData: { lat: 12.6269, lng: 80.1927 } 
+    image: "/pics/46.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6269, lng: 80.1927 } 
   },
   { 
     id: "mml-2", title: "Pancha Rathas", tamilTitle: "பஞ்ச ரதங்கள்",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Monolith Complex, Mamallapuram", duration: "2.5 Hours", price: "Included in Ticket", rating: 4.93, 
     description: "Five monolithic stone chariot structures carved out of single granite boulders in the 7th century.", 
     tamilDescription: "ஒரே கருங்கல்லில் செதுக்கப்பட்ட ஐந்து திராவிடக் கட்டிடக் கலை தேர் வடிவக் கோயில்கள்.",
-    image: IMGS.stoneTemple, safeForWomen: true, offlineMapData: { lat: 12.6160, lng: 80.1920 } 
+    image: "/pics/47.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6160, lng: 80.1920 } 
   },
   { 
     id: "mml-3", title: "Arjuna's Penance", tamilTitle: "அர்ச்சுனன் தபசு",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Town Centre, Mamallapuram", duration: "2 Hours", price: "Included in Ticket", rating: 4.96, 
     description: "World's largest open-air rock relief measuring 96 by 43 feet depicting the Descent of Ganges.", 
     tamilDescription: "கங்கை பூமிக்கு வந்த கதையைச் சித்தரிக்கும் 96x43 அடி கொண்ட உலகின் மிகப்பெரிய திறந்தவெளி பாறைச் சிற்பம்.",
-    image: IMGS.caveTemple, safeForWomen: true, offlineMapData: { lat: 12.6180, lng: 80.1930 } 
+    image: "/pics/48.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6180, lng: 80.1930 } 
   },
   { 
     id: "mml-4", title: "Krishna's Butter Ball", tamilTitle: "கிருஷ்ணனின் வெண்ணெய் உருண்டைப் பாறை",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Hillside Park, Mamallapuram", duration: "1 Hour", price: "Free Entry", rating: 4.94, 
     description: "Gigantic 250-ton natural granite boulder balancing precariously on a 45-degree smooth rock slope.", 
     tamilDescription: "45 டிகிரி சாய்வான பாறையில் உருண்டு விழாமல் ஆச்சரியமாக நிற்கும் 250 டன் இயற்கை கல் உருண்டை.",
-    image: IMGS.stoneTemple, safeForWomen: true, offlineMapData: { lat: 12.6190, lng: 80.1940 } 
+    image: "/pics/49.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6190, lng: 80.1940 } 
   },
   { 
     id: "mml-5", title: "Mahishasuramardini Cave", tamilTitle: "மகிஷாசுரமர்த்தினி குடைவரை",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Lighthouse Hill, Mamallapuram", duration: "1.5 Hours", price: "Included in Ticket", rating: 4.91, 
     description: "Pallava rock cave featuring bas-relief masterpiece of Goddess Durga slaying Mahishasura.", 
     tamilDescription: "துர்க்கை மகிஷாசுரனை வதம் செய்யும் பல்லவர் காலத்துப் புகழ்பெற்ற குடைவரை சிற்பம்.",
-    image: IMGS.caveTemple, safeForWomen: true, offlineMapData: { lat: 12.6150, lng: 80.1935 } 
+    image: "/pics/50.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6150, lng: 80.1935 } 
   },
   { 
     id: "mml-6", title: "Varaha Cave Temple", tamilTitle: "வராஹ குடைவரை கோயில்",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Hillside Complex, Mamallapuram", duration: "1.5 Hours", price: "Included in Ticket", rating: 4.90, 
     description: "7th-century rock-cut cave mandapam featuring intricate relief carvings of Varaha and Bhu Devi.", 
     tamilDescription: "7 ஆம் நூற்றாண்டு பல்லவர் வராஹ மூர்த்தி மற்றும் பூதேவி சிற்பக் குடைவரை மண்டபம்.",
-    image: IMGS.caveTemple, safeForWomen: true, offlineMapData: { lat: 12.6175, lng: 80.1925 } 
+    image: "/pics/51.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6175, lng: 80.1925 } 
   },
   { 
     id: "mml-7", title: "Tiger Cave", tamilTitle: "புலிக்குகை (சாளுவன்குப்பம்)",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Saluvankuppam, Mamallapuram", duration: "2 Hours", price: "₹25", rating: 4.87, 
     description: "Coastal open-air theater rock shrine decorated with carved yali (tiger head) motifs.", 
     tamilDescription: "புலி முகங்கள் செதுக்கப்பட்ட திறந்தவெளி கடற்கரை பாறை அரங்கம்.",
-    image: IMGS.caveTemple, safeForWomen: true, offlineMapData: { lat: 12.6800, lng: 80.1960 } 
+    image: "/pics/52.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6800, lng: 80.1960 } 
   },
   { 
     id: "mml-8", title: "Lighthouse", tamilTitle: "மாமல்லபுரம் கலங்கரை விளக்கம்",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Lighthouse Hill, Mamallapuram", duration: "1 Hour", price: "₹20", rating: 4.86, 
     description: "Active circular stone lighthouse offering views over Pallava monuments and coastal sea.", 
     tamilDescription: "கடலையும் மாமல்லபுர சிற்பங்களையும் முழுமையாகக் காண உதவும் பாறை கலங்கரை விளக்கம்.",
-    image: IMGS.statue, safeForWomen: true, offlineMapData: { lat: 12.6145, lng: 79.1930 } 
+    image: "/pics/53.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6145, lng: 79.1930 } 
   },
   { 
     id: "mml-9", title: "Sculpture Museum", tamilTitle: "அரசு சிற்பக் கலைக் கல்லூரி அருங்காட்சியகம்",
     category: "heritage", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "East Raja Street", duration: "1.5 Hours", price: "₹20", rating: 4.82, 
     description: "Exhibits over 3,000 stone, wood, and brass sculptures created by students of Govt Sculpture College.", 
     tamilDescription: "3,000 க்கும் மேற்பட்ட கருங்கல் மற்றும் மரச்சிலைகள் காட்சிப்படுத்தப்பட்டுள்ள அருங்காட்சியகம்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 12.6200, lng: 80.1910 } 
+    image: "/pics/54.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6200, lng: 80.1910 } 
   },
   { 
     id: "mml-10", title: "DakshinaChitra", tamilTitle: "தக்ஷிணசித்ரா பாரம்பரிய கிராமம்",
     category: "agri", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Muttukadu, ECR", duration: "3.5 Hours", price: "₹175", rating: 4.96, 
     description: "Living history heritage museum featuring 18 authentic recreated South Indian village houses and artisan workshops.", 
     tamilDescription: "தென்னிந்திய பாரம்பரிய 18 கிராமத்து வீடுகள் மற்றும் கைவினைப் பட்டறைகள் கொண்ட கிராமம்.",
-    image: IMGS.mansion, safeForWomen: true, offlineMapData: { lat: 12.8200, lng: 80.2400 } 
+    image: "/pics/55.jpeg", safeForWomen: true, offlineMapData: { lat: 12.8200, lng: 80.2400 } 
   },
   { 
     id: "mml-11", title: "Mahabalipuram Sculpture Shops", tamilTitle: "மாமல்லபுரம் சிற்பப் பட்டறைகள்",
     category: "agri", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Five Rathas Road", duration: "2 Hours", price: "Free Entry", rating: 4.91, 
     description: "Active stone carving workshops where traditional artisans chisel granite idols using age-old Pallava techniques.", 
     tamilDescription: "பல்லவர் கால முறைப்படி கருங்கற்களில் சிலைகள் செதுக்கும் கைவினைப் பட்டறைகள்.",
-    image: IMGS.farmPottery, safeForWomen: true, offlineMapData: { lat: 12.6165, lng: 80.1915 } 
+    image: "/pics/56.jpg.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6165, lng: 80.1915 } 
   },
   { 
     id: "mml-12", title: "Crocodile Bank", tamilTitle: "மெட்ராஸ் முதலைப் பண்ணை",
     category: "eco", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Vadanemmeli, ECR", duration: "2.5 Hours", price: "₹100", rating: 4.93, 
     description: "Herpetology conservation sanctuary housing over 2,000 muggers, gharials, and saltwater crocodiles.", 
     tamilDescription: "2,000 க்கும் மேற்பட்ட முதலைகள் பாதுகாத்து வளர்க்கப்படும் முதலை வளர்ப்பு மையம்.",
-    image: IMGS.ecoForest, safeForWomen: true, offlineMapData: { lat: 12.7400, lng: 80.2200 } 
+    image: "/pics/57.jpeg", safeForWomen: true, offlineMapData: { lat: 12.7400, lng: 80.2200 } 
   },
   { 
     id: "mml-13", title: "Kovalam Beach", tamilTitle: "கோவளம் அலைசறுக்குக் கடற்கரை",
     category: "eco", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Kovalam, ECR", duration: "2.5 Hours", price: "Free Entry", rating: 4.89, 
     description: "Blue Flag certified surfing beach with clean sandy shores and water sports.", 
     tamilDescription: "ப்ளூ ഫ്ലാഗ் சான்றிதழ் பெற்ற சுத்தமான அலைசறுக்கு மற்றும் நீர் விளையாட்டு கடற்கரை.",
-    image: IMGS.ecoCoast, safeForWomen: true, offlineMapData: { lat: 12.7900, lng: 80.2500 } 
+    image: "/pics/58.jpeg", safeForWomen: true, offlineMapData: { lat: 12.7900, lng: 80.2500 } 
   },
   { 
     id: "mml-14", title: "Vedanthangal Bird Sanctuary", tamilTitle: "வேடந்தாங்கள் பறவைகள் சரணாலயம்",
     category: "eco", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Vedanthangal", duration: "3 Hours", price: "₹25", rating: 4.94, 
     description: "Oldest water bird sanctuary in India attracting 40,000 migratory pelicans, cormorants, and ibis.", 
     tamilDescription: "40,000 க்கும் மேற்பட்ட வெளிநாட்டுப் பறவைகள் வந்து செல்லும் இந்தியாவின் பழமையான பறவைகள் சரணாலயம்.",
-    image: IMGS.ecoForest, safeForWomen: true, offlineMapData: { lat: 12.5400, lng: 79.8500 } 
+    image: "/pics/59.jpeg", safeForWomen: true, offlineMapData: { lat: 12.5400, lng: 79.8500 } 
   },
   { 
     id: "mml-15", title: "Moonrakers & Seashore Temple View Café", tamilTitle: "மூன்ரேக்கர்ஸ் கடற்கரைக் கோயில் உணவகம்",
     category: "food", districtId: "mahabalipuram", districtName: "Chengalpattu (Mamallapuram) District", location: "Shore Temple Road", duration: "1 Hour", price: "₹300", rating: 4.91, 
     description: "Rooftop café offering views of 7th-century Shore Temple along with fresh coffee and sea food.", 
     tamilDescription: "கடற்கரைக் கோயிலைக் கண்டவாறு கடல் உணவுகள் மற்றும் பானங்கள் வழங்கும் மொட்டை மாடி உணவகம்.",
-    image: IMGS.foodCoffee, safeForWomen: true, offlineMapData: { lat: 12.6260, lng: 80.1920 } 
+    image: "/pics/60.jpeg", safeForWomen: true, offlineMapData: { lat: 12.6260, lng: 80.1920 } 
   }
 ];
 
@@ -1034,9 +1034,9 @@ export function getLocalizedExperience(exp, language = "en") {
 
   const categoryLabels = {
     heritage: { en: "HERITAGE & CULTURE", ta: "பாரம்பரியம் & கலாச்சாரம்", te: "వారసత్వం & సంస్కృతి", hi: "विरासत और संस्कृति", ml: "പൈതൃകം & സംസ്കാരം", kn: "ಪರಂಪರೆ & ಸಂಸ್ಕೃತಿ" },
-    food: { en: "REGIONAL CUISINE", ta: "பாரம்பரிய உணவு", te: "ప్రాంతీయ వంటకాలు", hi: "क्षेत्रीय व्यंजन", ml: "പ്രാദേശിക ഭക്ഷണം", kn: "ಪ್ರಾದೇಶಿಕ ಅಡುಗೆ" },
+    food: { en: "REGIONAL CUISINE", ta: "பாரம்பரிய உணவு", te: "ప్రాంతీయ వంటకాలు", hi: "क्षेत्रीय व्यंजन", ml: "പ്രാദേശിക ഭക്ഷണം", kn: "പ്രાદೇಶಿಕ ಅಡುಗೆ" },
     agri: { en: "AGRI & FARMSTAY", ta: "விவசாயம் & பண்ணை", te: "వ్యవసాయం & ఫార్మ్‌స్టే", hi: "कृषि और फ़ार्मस्टे", ml: "കൃഷി & ഫാംസ്റ്റേ", kn: "ಕೃಷಿ & ಫಾರ್ಮ್‌ಸ್ಟೇ" },
-    eco: { en: "ECO BIOSPHERE", ta: "சுற்றுச்சூழல் & இயற்கை", te: "ఎకో బయోస్పియర్", hi: "इको बायोस्फीयर", ml: "ഇക്കോ ബയോസ്ഫിയർ", kn: "ಇಕೋ ಬಯೋಸ್ಫಿಯರ್" }
+    eco: { en: "ECO BIOSPHERE", ta: "சுற்றுச்சூழல் & இயற்கை", te: "ఎకో బయోస్పియర్", hi: "இகோ பயோஸ்ஃபியர்", ml: "ഇക്കോ ബയോസ്ഫിയർ", kn: "ಇಕೋ ಬಯೋಸ್ಫಿಯರ್" }
   };
 
   const categoryLabel = (categoryLabels[exp.category] && categoryLabels[exp.category][language])
