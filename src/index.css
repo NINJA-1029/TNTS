@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Noto+Sans+Tamil:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-dark-burgundy: #3D081B;
+  --bg-darker-burgundy: #270410;
+  --card-yellow-bg: #FDE3A7;
+  --card-yellow-light: #FFF4D4;
+  --accent-gold: #F8C868;
+  --accent-orange: #FF7A00;
+  --text-dark: #3D081B;
+  --text-light: #FFF6E5;
+  --sos-red: #E53935;
+  --border-yellow: rgba(253, 227, 167, 0.3);
+  --font-serif: 'Cinzel', 'Noto Sans Tamil', serif;
+  --font-sans: 'Outfit', 'Noto Sans Tamil', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark-burgundy);
+  color: var(--text-light);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
